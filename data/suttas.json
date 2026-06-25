@@ -1,0 +1,1316 @@
+{
+  "version": "1.0.0",
+  "license": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Translations sourced from SuttaCentral (suttacentral.net). English translations by Bhikkhu Sujato (CC0). Korean passages from traditional commentary.",
+  "generated": "2026-06-14T23:47:18.447Z",
+  "suttas": [
+    {
+      "id": "dhp1-2",
+      "layer": "empathy",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Pairs",
+      "title_ko": "쌍품 (雙品)",
+      "source_ref": "Dhp 1–2",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "마음은 모든 법(法)의 선구자이며,\n마음이 주인이고 마음에서 나온다.\n더럽혀진 마음으로 말하거나 행동하면\n괴로움이 그를 따른다.\n수레바퀴가 소의 발굽을 따르듯이.\n\n마음은 모든 법의 선구자이며,\n마음이 주인이고 마음에서 나온다.\n청정한 마음으로 말하거나 행동하면\n행복이 그를 따른다.\n떠나지 않는 그림자처럼.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mind is the forerunner of all actions.\nAll deeds are led by mind, created by mind.\nIf one speaks or acts with a corrupt mind,\nsuffering follows, as the wheel follows the hoof of an ox.\n\nMind is the forerunner of all actions.\nAll deeds are led by mind, created by mind.\nIf one speaks or acts with a serene mind,\nhappiness follows, as a shadow that never departs.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "dhp5",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Pairs",
+      "title_ko": "쌍품 (雙品)",
+      "source_ref": "Dhp 5",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "미움은 결코 미움으로써 가라앉지 않는다.\n미움이 아닌 것으로만 가라앉는다.\n이것은 영원한 법이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Never is hatred settled by hatred in this world.\nOnly by non-hatred is hatred appeased.\nThis is the ancient rule.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "dhp21",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Heedfulness",
+      "title_ko": "불방일품 (不放逸品)",
+      "source_ref": "Dhp 21",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp21-32/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "방일하지 않음(不放逸)은 불사(不死)의 길이고,\n방일함은 죽음의 길이다.\n방일하지 않는 사람은 죽지 않고,\n방일한 사람은 이미 죽은 것과 같다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Heedfulness is the path to the Deathless;\nheedlessness is the path to death.\nThe heedful do not die;\nthe heedless are as if already dead.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "사고"
+      ]
+    },
+    {
+      "id": "dhp183",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Buddhas",
+      "title_ko": "불품 (佛品)",
+      "source_ref": "Dhp 183",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp179-196/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "어떤 악도 짓지 않고,\n선을 가득 닦으며,\n자신의 마음을 완전히 청정하게 하는 것—\n이것이 모든 부처님의 가르침이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Not to do any evil,\nto cultivate good,\nto purify one's mind—\nthis is the teaching of the Buddhas.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "dhp197-200",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Happiness",
+      "title_ko": "행복품 (幸福品)",
+      "source_ref": "Dhp 197–200",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp197-208/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "아, 참으로 행복하게 살리라, 원한 없는 우리는!\n증오로 가득 찬 인간들 가운데에서\n우리는 원한 없이 살리라.\n\n아, 참으로 행복하게 살리라, 집착 없는 우리는!\n집착으로 가득 찬 인간들 가운데에서\n우리는 집착 없이 살리라.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "How very happily we live,\nwe who have no attachments.\nWe shall feast on joy,\nas do the Gods of Streaming Radiance.\n\nVictory breeds enmity;\nthe defeated dwell in pain.\nThe peaceful dwell in happiness,\nhaving abandoned victory and defeat.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "dhp223",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Anger",
+      "title_ko": "분노품 (忿怒品)",
+      "source_ref": "Dhp 223",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/dhp221-234/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "성냄은 성내지 않음으로 이겨야 하고,\n악은 선으로 이겨야 하며,\n인색함은 보시로 이겨야 하고,\n거짓말쟁이는 진실로 이겨야 한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Conquer anger by non-anger,\nbad by good,\nmiserliness by generosity,\nand the liar by truth.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "dhp276-279",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Path",
+      "title_ko": "도품 (道品)",
+      "source_ref": "Dhp 276–279",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp273-289/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "그대들 스스로 정진하라.\n여래는 단지 길을 가르쳐 줄 뿐이다.\n선정에 들어 수행하는 자는\n마라(Māra)의 속박에서 벗어날 것이다.\n\n모든 형성된 것은 무상하다—고(苦)다.\n이것을 통찰로 보게 될 때\n괴로움에서 멀어진다.\n이것이 청정에 이르는 길이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "You yourselves must strive;\nthe Buddhas only show the way.\nThose who have entered the path and who meditate\nare released from the bonds of Māra.\n\n'All conditioned things are impermanent'—\nwhen one sees this with wisdom,\none turns away from suffering.\nThis is the path to purification.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn56.11",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "Setting the Wheel of the Dhamma in Motion",
+      "title_ko": "전법륜경 (轉法輪經)",
+      "source_ref": "SN 56.11",
+      "truth_tags": [
+        "고",
+        "집",
+        "멸",
+        "도"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn56.11/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이제 고(苦)의 성스러운 진리는 이것이다.\n태어남이 고통이요, 늙음이 고통이요, 병이 고통이요, 죽음이 고통이다.\n슬픔·비탄·고통·근심·절망이 고통이다.\n좋아하지 않는 것과 함께하는 것이 고통이요,\n좋아하는 것과 헤어지는 것이 고통이요,\n원하는 것을 얻지 못하는 것이 고통이다.\n요컨대 다섯 가지 취착의 무더기(五取蘊)가 고통이다.\n\n비구들이여, 이제 고의 원인(集)의 성스러운 진리는 이것이다.\n그것은 재생을 거듭하게 하며 환희와 탐욕을 수반하고,\n여기저기서 즐거움을 찾는 갈애(渴愛)이니,\n곧 감각적 욕망에 대한 갈애, 존재에 대한 갈애, 소멸에 대한 갈애이다.\n\n비구들이여, 이제 고의 소멸(滅)의 성스러운 진리는 이것이다.\n그 갈애를 완전히 사라지게 하고 소멸시키며,\n버리고 포기하고 해방되어 집착하지 않는 것이다.\n\n비구들이여, 이제 고의 소멸에 이르는 길(道)의 성스러운 진리는 이것이다.\n바로 이 성스러운 팔정도(八正道)이니—\n정견(正見)·정사유(正思惟)·정어(正語)·정업(正業)·정명(正命)·정정진(正精進)·정념(正念)·정정(正定)이다.",
+          "attribution": "각묵 스님 역 (빠알리성전협회)"
+        },
+        {
+          "lang": "en",
+          "text": "Now this, mendicants, is the noble truth of suffering:\nbirth is suffering, aging is suffering, illness is suffering, death is suffering;\nsorrow, lamentation, pain, sadness, and distress are suffering;\nassociation with the unloved is suffering;\nseparation from the loved is suffering;\nnot getting what you wish for is suffering.\nIn brief, the five grasping aggregates are suffering.\n\nNow this is the noble truth of the origin of suffering:\nit is the craving that leads to rebirth, co-arises with relishing and greed,\nand seeks pleasure here and there;\nthat is, craving for sensual pleasure, craving for continued existence, craving for extermination.\n\nNow this is the noble truth of the cessation of suffering:\nit is the complete fading away and cessation of that same craving,\ngiving it up, relinquishing it, releasing it, and letting it go.\n\nNow this is the noble truth of the practice that leads to the cessation of suffering:\nit is this noble eightfold path—\nright view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right immersion.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "sn35.28",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The Fire Sermon",
+      "title_ko": "불의 경 (Ādittapariyāya Sutta)",
+      "source_ref": "SN 35.28",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn35.28/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 모든 것이 불타고 있다.\n무엇이 불타고 있는가?\n눈이 불타고 있고, 눈에 보이는 것들이 불타고 있고,\n눈의 알음알이가 불타고 있고, 눈의 접촉이 불타고 있다.\n눈의 접촉을 조건으로 생겨나는—즐거움이든, 괴로움이든,\n즐겁지도 괴롭지도 않은 것이든—그 모든 느낌도 불타고 있다.\n\n무엇으로 불타고 있는가?\n탐욕의 불로 불타고 있고,\n성냄의 불로 불타고 있고,\n어리석음의 불로 불타고 있다.\n태어남으로, 늙음으로, 죽음으로,\n슬픔·비탄·고통·근심·절망으로 불타고 있다고 나는 말한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, all is burning.\nAnd what is the all that is burning?\nThe eye is burning, forms are burning, eye-consciousness is burning,\neye-contact is burning, and whatever is felt as pleasant, painful,\nor neither-painful-nor-pleasant that arises with eye-contact as condition—\nthat too is burning.\n\nBurning with what?\nBurning with the fire of greed,\nburning with the fire of hatred,\nburning with the fire of delusion.\nBurning with birth, aging, and death,\nwith sorrow, lamentation, pain, sadness, and distress, I say.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn12.2",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "Dependent Origination",
+      "title_ko": "연기경 (緣起經)",
+      "source_ref": "SN 12.2",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn12.2/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "무엇이 연기(緣起)인가?\n\n무명(無明)을 조건으로 행(行)이,\n행을 조건으로 식(識)이,\n식을 조건으로 명색(名色)이,\n명색을 조건으로 육입(六入)이,\n육입을 조건으로 촉(觸)이,\n촉을 조건으로 수(受)가,\n수를 조건으로 애(愛)가,\n애를 조건으로 취(取)가,\n취를 조건으로 유(有)가,\n유를 조건으로 생(生)이,\n생을 조건으로 노사(老死)·슬픔·비탄·고통·근심·절망이 발생한다.\n\n이와 같이 이 전체 고통의 집합이 발생한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "And what is dependent origination?\n\nWith ignorance as condition, formations come to be;\nwith formations as condition, consciousness;\nwith consciousness as condition, name-and-form;\nwith name-and-form as condition, the six sense bases;\nwith the six sense bases as condition, contact;\nwith contact as condition, feeling;\nwith feeling as condition, craving;\nwith craving as condition, clinging;\nwith clinging as condition, existence;\nwith existence as condition, birth;\nwith birth as condition, aging-and-death, sorrow, lamentation,\npain, sadness, and distress come to be.\n\nSuch is the origin of this whole mass of suffering.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn22.59",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The Characteristic of Non-Self",
+      "title_ko": "무아상경 (無我相經)",
+      "source_ref": "SN 22.59",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn22.59/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 형상(色)은 자아(自我)가 아니다.\n만약 형상이 자아라면,\n형상이 고통으로 이끌지 않을 것이고,\n'내 형상은 이렇게 되어라,\n내 형상은 이렇게 되지 말아라'라고 말할 수 있을 것이다.\n\n그러나 형상은 자아가 아니기 때문에\n형상은 고통으로 이끌며,\n형상에 대해 '이렇게 되어라, 이렇게 되지 말아라'라고\n말할 수 없다.\n\n이와 같이 이 모든 것—형상·느낌(受)·지각(想)·의도적 형성(行)·알음알이(識)—\n이것들을 있는 그대로 바른 통찰지로 보아야 한다:\n'이것은 내 것이 아니고, 이것은 내가 아니며, 이것은 나의 자아가 아니다.'",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, form is not self.\nIf form were self, then form would not lead to affliction,\nand you could have it of form:\n'Let my form be like this; let my form not be like that.'\nBut because form is not self,\nform leads to affliction,\nand none can have it of form:\n'Let my form be like this; let my form not be like that.'\n\nSo you should truly see any kind of form at all—\npast, future, or present; internal or external;\ngross or subtle; inferior or superior; far or near—\nas: 'This is not mine, I am not this, this is not my self.'",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn1.20",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The World is Swept Away",
+      "title_ko": "세상은 흘러가다",
+      "source_ref": "SN 1.20",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/sn1.20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "세상은 흘러가 버린다.\n세상은 영원하지 않다.\n세상에는 은신처가 없으니\n세상에는 주인이 없다.\n\n세상에는 소유물이 없으니\n집착 없이 가야 한다.\n죽음을 겪는 인간에게\n내려놓음이 필요하니,\n이것이 현자가 존재를 보는 방식이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "The world is swept away, it does not endure;\nthe world offers no shelter, there is no one in charge.\nThe world has nothing of its own;\none has to pass on, leaving everything behind.\n\nThe world is incomplete; it is insatiate, a slave to craving.\nThe wise see things as they are—\nthis is the vision of reality.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "an3.65",
+      "layer": "practice",
+      "nikaya": "an",
+      "collection": "앙굿따라 니까야 (Aṅguttara Nikāya)",
+      "title_en": "The Kālāma Sutta — To the Kālāmas",
+      "title_ko": "갈라마경 (Kālāma Sutta)",
+      "source_ref": "AN 3.65",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/an3.65/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "갈라마들이여, 다음을 이유로 받아들이지 마십시오:\n구전으로 전해졌기 때문에,\n전통에 속하기 때문에,\n많이 들었기 때문에,\n경전에 있기 때문에,\n이론적으로 맞기 때문에,\n추론의 근거가 있기 때문에,\n이유가 그럴싸하기 때문에,\n견해를 검토한 후에 동의하기 때문에,\n그 사람이 능숙해 보이기 때문에,\n또는 '이 사문은 나의 스승이기 때문에'라는 이유로.\n\n갈라마들이여, 여러분이 스스로 '이것들은 불건전하고,\n이것들은 비난받을 만하며,\n현명한 이들이 이것을 꾸짖고,\n이것을 받아들여 행하면 해롭고 고통스럽다'라고 알 때,\n그것들을 버려야 합니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Come, Kālāmas, don't go by oral tradition, by lineage of teaching,\nby hearsay, by a collection of texts,\nby logic, by inferential reasoning, by reasoned cogitation,\nby the acceptance of a view after pondering it,\nby the seeming competence of a speaker,\nor by the thought 'This ascetic is our teacher.'\n\nWhen you know for yourselves:\n'These things are unwholesome, blameworthy,\ncensured by the wise;\nundertaken and practiced, these things lead to harm and suffering'—\nthen you should abandon them.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "mn10-satipatthana",
+      "layer": "practice",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "Mindfulness Meditation — The Foundations of Mindfulness",
+      "title_ko": "사념처경 (四念處經)",
+      "source_ref": "MN 10",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "고"
+      ],
+      "url": "https://suttacentral.net/mn10/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이 하나의 길이 있습니다.\n중생들의 청정을 위하여,\n슬픔과 비탄을 뛰어넘기 위하여,\n고통과 근심을 사라지게 하기 위하여,\n올바른 방법을 성취하기 위하여,\n열반을 실현하기 위하여—\n그것은 바로 사념처(四念處)입니다.\n\n무엇이 넷인가?\n비구는 몸(身)에서 몸을 관찰하며 머문다.\n느낌(受)에서 느낌을 관찰하며 머문다.\n마음(心)에서 마음을 관찰하며 머문다.\n법(法)에서 법을 관찰하며 머문다—\n열렬하고, 분명하게 알아차리고, 마음챙기면서,\n세상에 대한 탐욕과 싫어함을 제어하면서.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, there is one path for the purification of beings,\nfor the passing beyond sorrow and lamentation,\nfor the ending of pain and sadness,\nfor reaching the right method, and for realizing Nibbāna—\nand that is the four kinds of mindfulness meditation.\n\nWhat are the four? A mendicant meditates\ncontemplating the body in the body—\nardent, aware, and mindful,\nafter removing covetousness and displeasure with respect to the world.\nThey contemplate feelings in feelings,\nthe mind in the mind, and phenomena in phenomena—\nardent, aware, and mindful.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "mn22-snake",
+      "layer": "insight",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "The Simile of the Snake",
+      "title_ko": "뱀의 비유 (Alagaddūpama Sutta)",
+      "source_ref": "MN 22",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn22/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 내 가르침은 뗏목(筏)에 비유할 수 있습니다.\n건너기 위한 것이지, 들고 다니기 위한 것이 아닙니다.\n\n비구들이여, 뗏목의 비유를 이해한 사람은\n법도 버려야 합니다,\n하물며 법 아닌 것은 두말할 것도 없이.\n\n비구들이여, '나는 이것이 없다, 이것은 내 것이 아니다'\n이렇게 관찰할 때, 그는 세상에서\n아무것도 집착하지 않게 됩니다.\n집착하지 않으면 불안해하지 않습니다.\n불안해하지 않으면 스스로 완전한 열반에 듭니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, I teach the Dhamma compared to a raft,\nfor the purpose of crossing over, not for the purpose of holding onto.\nUnderstanding the Dhamma as taught compared to a raft,\nyou should let go of even the Dhamma,\nto say nothing of non-Dhamma.\n\nWhen one observes of all things:\n'This is not mine, this I am not, this is not my self,'—\nthen one does not cling to anything in the world.\nNot clinging, one is not anxious.\nNot being anxious, one personally attains Nibbāna.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn3.3",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "A Lot of Help",
+      "title_ko": "왕에게 가르친 분노",
+      "source_ref": "SN 3.3",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/sn3.3/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "왕이여, 분노가 일어날 때,\n몸과 말과 마음에 상처를 입히는 것을\n부끄러이 여기는 사람들은 행복을 얻습니다.\n\n분노가 일어날 때 부끄러움이\n고삐처럼 당겨줍니다.\n화가 치솟을 때 분노를 다스리는 자는\n마치 전차를 제어하는 마부와 같습니다.\n나는 그를 진정한 마부라 부르고,\n고삐만 쥐고 있는 자는 단지 끌려가는 사람일 뿐입니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "When anger arises, those ashamed of it\nfind happiness in body, speech, and mind.\n\nWhen anger arises, a sense of shame\npulls one back like a rein.\nWhoever controls their anger when it surges\nis like a charioteer who controls a swift vehicle.\nI call them a charioteer;\nothers merely hold the reins.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "병고"
+      ]
+    },
+    {
+      "id": "mn2-taints",
+      "layer": "practice",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "All the Taints",
+      "title_ko": "일체루경 (一切漏經)",
+      "source_ref": "MN 2",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn2/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "무지한 범부는\n'나는 과거에 존재했는가, 아니었는가?\n미래에 나는 존재할 것인가, 아닐 것인가?\n나는 지금 무엇인가? 어떻게 이렇게 있는가?'라고 생각하며\n내면으로 숙고하거나 또는 이런 생각을 낸다:\n'나는 자아가 있는가?'\n\n지혜로운 성스러운 제자들은\n이런 것들을 현명하게 숙고한다:\n'이것은 무상하다. 이것은 고통이다.\n이것은 자아가 아니다.'\n이렇게 봄으로써 그는 감각적 쾌락의 번뇌에서,\n존재의 번뇌에서, 무지의 번뇌에서 해방된다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "An unlearned ordinary person does not understand\nwhat things are fit for attention and what things are not.\nNot attending to things fit for attention,\nattending to things unfit for attention,\nthe taints that have not arisen arise,\nand the taints that have arisen increase.\n\nA learned noble disciple understands\nwhat is fit for attention and what is not.\nAttending to things fit for attention,\nnot attending to things unfit for attention,\nthe taints that have not arisen do not arise,\nand the taints that have arisen are abandoned.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "snp1.8-metta",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "숫따니빠따 (Sutta Nipāta)",
+      "title_en": "Loving-Kindness",
+      "title_ko": "자비경 (慈悲經, Metta Sutta)",
+      "source_ref": "Snp 1.8",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/snp1.8/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "자신에게 이익이 될 것을 깨달아\n고요의 경지에 능숙한 사람이라면\n유능하고 정직하며 단정하고\n말이 부드럽고 온화하며 교만하지 않아야 한다.\n\n모든 살아 있는 것들이 행복하기를,\n안온하기를, 마음이 편안하기를!\n\n어떤 살아 있는 존재든—\n약하거나 강하거나, 길거나 짧거나,\n크거나 작거나, 보이거나 보이지 않거나,\n가까이 있거나 멀리 있거나, 이미 태어났거나 태어날—\n모든 존재들이 행복하기를!\n\n어머니가 자신의 외아들을\n목숨 바쳐 지키듯이,\n그와 같이 모든 살아있는 것들에 대해\n한량없는 마음을 닦아야 한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Whatever living beings there may be,\nwithout exception, whether they are weak or strong,\nlong or large, medium, short, small, or fat,\nseen or unseen, those who live near and those who live far,\nthose who are born and those who are to be born—\nmay all beings without exception be happy!\n\nJust as a mother would protect with her own life\nher own son, her only son,\nso too you should cultivate\na heart of measureless love toward all beings.\n\nYou should cultivate this mindfulness—\nthis is what is said to be a meditative state of holy living here.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "an4.36-lobha",
+      "layer": "insight",
+      "nikaya": "an",
+      "collection": "앙굿따라 니까야 (Aṅguttara Nikāya)",
+      "title_en": "On Greed, Hatred, and Delusion",
+      "title_ko": "탐욕·성냄·어리석음에 대하여",
+      "source_ref": "AN 3.69",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/an3.69/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "탐욕은 악이며, 탐욕 없음도 악을 낳지 않는다.\n성냄은 악이며, 성냄 없음도 악을 낳지 않는다.\n어리석음은 악이며, 어리석음 없음도 악을 낳지 않는다.\n\n탐욕으로 정복된 마음과 지력(智力)을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n성냄으로 정복된 마음과 지력을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n어리석음으로 정복된 마음과 지력을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n\n탐욕의 불이 꺼지면 고통도 사라진다.\n성냄의 불이 꺼지면 고통도 사라진다.\n어리석음의 불이 꺼지면 고통도 사라진다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Greed is a cause of evil; non-greed is a cause of non-evil.\nHatred is a cause of evil; non-hatred is a cause of non-evil.\nDelusion is a cause of evil; non-delusion is a cause of non-evil.\n\nA person overcome by greed, their mind and intellect overpowered,\nthinks of their own harm, another's harm, or both.\nA person overcome by hatred... a person overcome by delusion,\ntheir mind and intellect overpowered,\nthinks of their own harm, another's harm, or both.\n\nWhen the fires of greed are extinguished, suffering ceases.\nWhen hatred ceases, suffering ceases.\nWhen delusion ceases, suffering ceases.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "dhp338-345",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Craving",
+      "title_ko": "갈애품 (渴愛品)",
+      "source_ref": "Dhp 338–340",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp334-359/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "뿌리가 다치지 않고 튼튼하면\n나무는 잘라져도 다시 자란다.\n이와 같이 갈애가 완전히 뽑히지 않으면\n고통이 거듭거듭 생겨난다.\n\n서른여섯 개의 탁류가 즐거운 것을 향해 흐르니\n강한 갈망의 흐름이 사견(邪見)에 빠진 자를 앗아간다.\n탁류는 사방으로 흐르고 넝쿨 식물은 땅을 뻗어 나간다.\n그 넝쿨을 보면 현명한 자여, 뿌리를 끊어라.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Just as a tree with roots unharmed and strong\ngrows back even when cut down,\nso too, when underlying craving is not uprooted,\nsuffering springs up again and again.\n\nFor one who has thirty-six streams of craving\nrushing toward pleasurable things,\nthe flood of thoughts based on desire\ncarries them away.\nThe streams flow everywhere, the creeper sprouts and grows;\nseeing the sprouting creeper, cut the root with wisdom.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "애별리고"
+      ]
+    },
+    {
+      "id": "ud8.1-nibbana",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "우다나 (Udāna)",
+      "title_en": "Nibbāna — The Unborn",
+      "title_ko": "열반 — 생겨나지 않은 것",
+      "source_ref": "Ud 8.1–3",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/ud8.1/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 태어나지 않은 것이 있고,\n생겨나지 않은 것이 있고,\n만들어지지 않은 것이 있고,\n형성되지 않은 것이 있다.\n\n비구들이여, 태어나지 않은 것,\n생겨나지 않은 것,\n만들어지지 않은 것,\n형성되지 않은 것이 없다면,\n태어난 것·생겨난 것·만들어진 것·형성된 것에서\n벗어남이 없을 것이다.\n\n그러나 태어나지 않은 것,\n생겨나지 않은 것,\n만들어지지 않은 것,\n형성되지 않은 것이 있기 때문에,\n태어난 것·생겨난 것·만들어진 것·형성된 것에서\n벗어남이 있다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, there is an unborn, unbecome, unmade, unconditioned.\nIf there were no unborn, unbecome, unmade, unconditioned,\nthere would be no escape from the born, become, made, conditioned.\n\nBut because there is an unborn, unbecome, unmade, unconditioned,\nthere is an escape from the born, become, made, conditioned.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn1.1",
+      "nikaya": "sn",
+      "collection": "SN 1.1",
+      "title_en": "The Flood",
+      "title_ko": "폭류 경",
+      "source_ref": "SN 1.1",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/sn1.1/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 1.1\n1. A Reed\nCrossing the Flood\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s Monastery.\nThen, late at night, a glorious deity, lighting up the entire Jeta’s Grove, went up to the Buddha, bowed, stood to one side, and said to him,\n“Good fellow, how did you cross the flood?”\n“Neither standing nor swimming, respectable sir, I crossed the flood.”\n“But in what way did you cross the flood neither standing nor swimming?”\n“When I stood, I sank under.\nWhen I swam, I was swept away.\nThat’s how I crossed the flood neither standing nor swimming.”\n“After a long time I see\na brahmin fully quenched.\nNeither standing nor swimming,\nhe’s crossed over clinging to the world.”\nThis is what that deity said,\nand the teacher approved.\nThen that deity, knowing that the teacher approved, bowed and respectfully circled the Buddha, keeping him on his right, before vanishing right there.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "empathy",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn12.15",
+      "nikaya": "sn",
+      "collection": "SN 12.15",
+      "title_en": "With Kaccāyana",
+      "title_ko": "깟짜야나곳따 경",
+      "source_ref": "SN 12.15",
+      "truth_tags": [
+        "집",
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn12.15/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 12.15\n2. Fuel\nKaccānagotta\nAt Sāvatthī.\nThen Venerable Kaccānagotta went up to the Buddha, bowed, sat down to one side, and said to him:\n“Sir, they speak of this thing called ‘right view’.\nHow is right view defined?”\n“Kaccāna, this world mostly relies on the duality of existence and non-existence.\nBut for one who truly sees the origin of the world with right understanding, the concept of non-existence regarding the world does not occur.\nAnd for one who truly sees the cessation of the world with right understanding, the concept of existence regarding the world does not occur.\nThis world is for the most part shackled by getting involved, grasping, and insisting.\nBut if—for all that getting involved and grasping, mental fixation, and insistence and underlying tendency—they do not get attracted, grasp, and fixate on the thought, ‘my self’,\nthey’ll have no doubt or uncertainty that what arises is just suffering arising, and what ceases is just suffering ceasing. Their knowledge of this is independent of others.\nThis is how right view is defined.\n‘All exists’: this is one extreme.\n‘All does not exist’: this is the second extreme.\nAvoiding these two extremes, the Realized One teaches by the middle way:\n‘Ignorance is a requirement for choices.\nChoices are a requirement for consciousness. …\nThat is how this entire mass of suffering originates.\nWhen ignorance fades away and ceases with no residue left behind, choices cease.\nWhen choices cease, consciousness ceases. …\nThat is how this entire mass of suffering ceases.’”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn22.22",
+      "nikaya": "sn",
+      "collection": "SN 22.22",
+      "title_en": "The Burden",
+      "title_ko": "짐 경",
+      "source_ref": "SN 22.22",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/sn22.22/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 22.22\n3. The Burden\nThe Burden of Responsibility\nAt Sāvatthī.\n“Mendicants, I will teach you the burden, the bearer of the burden, the taking up of the burden, and the putting down of the burden.\nListen …\nAnd what is the burden?\nThe five grasping aggregates, it should be said.\nWhat five?\nThe grasping aggregates of form, feeling, perception, choices, and consciousness.\nThis is called the burden.\nAnd who is the bearer of the burden?\nThe individual, it should be said;\nthe venerable of such and such name and clan.\nThis is called the bearer of the burden.\nAnd what is the taking up of the burden?\nIt’s the craving that leads to future lives, mixed up with relishing and greed, taking pleasure there wherever it alights. That is,\ncraving for sensual pleasures, craving for existence, and craving for nonexistence.\nThis is called the taking up of the burden.\nAnd what is the putting down of the burden?\nIt’s the fading away and cessation of that very same craving no residue left behind; giving it away, letting it go, releasing it, and not clinging to it.\nThis is called the putting down of the burden.”\nThat is what the Buddha said.\nThen the Holy One, the Teacher, went on to say:\n“The five aggregates are indeed burdens,\nand the individual is the bearer of the burden.\nTaking up the burden is suffering in the world,\nand putting the burden down is happiness.\nWhen the heavy burden is put down\nwithout taking up another,\none who has plucked out craving, root and all,\nis hungerless, quenched.”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn22.95",
+      "nikaya": "sn",
+      "collection": "SN 22.95",
+      "title_en": "Foam",
+      "title_ko": "포말 경",
+      "source_ref": "SN 22.95",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn22.95/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 22.95\n10. Flowers\nA Lump of Foam\nAt one time the Buddha was staying near Ayodhya on the bank of the Ganges river.\nThere the Buddha addressed the mendicants:\n“Mendicants, suppose this Ganges river was carrying along a big lump of foam. And a person with clear eyes would see it and contemplate it, examining it rationally. And it would appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in a lump of foam?\nIn the same way, a mendicant sees and contemplates any kind of form at all—past, future, or present; internal or external; coarse or fine; inferior or superior; near or far—examining it rationally. And it appears to them as completely vacuous, hollow, and insubstantial. For what substance could there be in form?\nSuppose it was autumn, when the heavens rain heavily, and a bubble on the water forms and pops right away. And a person with clear eyes would see it and contemplate it, examining it rationally. And it would appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in a water bubble?\nIn the same way, a mendicant sees and contemplates any kind of feeling at all … examining it rationally. And it appears to them as completely vacuous, hollow, and insubstantial. For what substance could there be in feeling?\nSuppose that in the last month of summer, at noon, a shimmering mirage appears. And a person with clear eyes would see it and contemplate it, examining it rationally. And it would appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in a mirage?\nIn the same way, a mendicant sees and contemplates any kind of perception at all … examining it carefully. And it appears to them as completely vacuous, hollow, and insubstantial. For what substance could there be in perception?\nSuppose there was a person in need of heartwood. Wandering in search of heartwood, they’d take a sharp axe and enter a forest. There they’d see a big banana trunk, straight and young and grown unskewed. They’d cut it down at the base, cut off the top, and unroll the coiled sheaths. But they wouldn’t even find sapwood, much less heartwood. And a person with clear eyes would see it and contemplate it, examining it rationally. And it would appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in a banana trunk?\nIn the same way, a mendicant sees and contemplates any kind of choices at all … examining them rationally. And they appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in choices?\nSuppose an illusionist or their apprentice was to demonstrate an illusion at the crossroads. And a person with clear eyes would see it and contemplate it, examining it rationally. And it would appear to them as completely vacuous, hollow, and insubstantial. For what substance could there be in an illusion?\nIn the same way, a mendicant sees and contemplates any kind of consciousness at all—past, future, or present; internal or external; coarse or fine; inferior or superior; near or far—examining it rationally. And it appears to them as completely vacuous, hollow, and insubstantial. For what substance could there be in consciousness?\nSeeing this, a learned noble disciple grows disillusioned with form, feeling, perception, choices, and consciousness.\nBeing disillusioned, desire fades away. When desire fades away they’re freed. When they’re freed, they know they’re freed.\nThey understand: ‘… there is nothing further for this place.’”\nThat is what the Buddha said.\nThen the Holy One, the Teacher, went on to say:\n“Form is like a lump of foam;\nfeeling is like a bubble;\nperception seems like a mirage;\nchoices like a banana plant;\nand consciousness like an illusion:\nso taught the kinsman of the Sun.\nHowever you contemplate them,\nexamining them rationally,\nthey’re vacuous and hollow\nwhen you look at them closely.\nConcerning this body,\nhe of vast wi",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn35.23",
+      "nikaya": "sn",
+      "collection": "SN 35.23",
+      "title_en": "The All",
+      "title_ko": "모든 것 경",
+      "source_ref": "SN 35.23",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn35.23/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 35.23\n3. All\nAll\nAt Sāvatthī.\n“Mendicants, I will teach you the all.\nListen …\nAnd what is the all?\nIt’s just the eye and sights, the ear and sounds, the nose and smells, the tongue and tastes, the body and touches, and the mind and ideas.\nThis is called the all.\nMendicants, suppose someone was to say:\n‘I’ll deny this all and describe another all.’ They’d have no grounds for that claim,\nthey’d be stumped by questions, and, in addition, they’d get frustrated.\nWhy is that?\nBecause they’re out of their element.”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn36.6",
+      "nikaya": "sn",
+      "collection": "SN 36.6",
+      "title_en": "The Arrow",
+      "title_ko": "살라 경 — 화살",
+      "source_ref": "SN 36.6",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/sn36.6/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 36.6\n1. With Verses\nAn Arrow\n“Mendicants, an unlearned ordinary person feels pleasant, painful, and neutral feelings.\nA learned noble disciple also feels pleasant, painful, and neutral feelings.\nWhat, then, is the difference between a learned noble disciple and an ordinary unlearned person?”\n“Our teachings are rooted in the Buddha. …”\n“When an unlearned ordinary person experiences painful physical feelings they sorrow and wail and lament, beating their breast and falling into confusion.\nThey experience two feelings:\nphysical and mental.\nIt’s like a person who is struck with an arrow,\nonly to be struck with a second arrow.\nThat person experiences the feeling of two arrows.\nIn the same way, when an unlearned ordinary person experiences painful physical feelings they sorrow and wail and lament, beating their breast and falling into confusion.\nThey experience two feelings:\nphysical and mental.\nWhen they’re touched by painful feeling, they resist it.\nThe underlying tendency for aversion towards painful feeling underlies that.\nWhen touched by painful feeling they look forward to enjoying sensual pleasures.\nWhy is that?\nBecause an unlearned ordinary person doesn’t understand any escape from painful feeling apart from sensual pleasures.\nSince they look forward to enjoying sensual pleasures, the underlying tendency to greed for pleasant feeling underlies that.\nThey don’t truly understand feelings’ origin, disappearance, gratification, drawback, and escape.\nThe underlying tendency to ignorance about neutral feeling underlies that.\nIf they feel a pleasant feeling, they feel it attached.\nIf they feel a painful feeling, they feel it attached.\nIf they feel a neutral feeling, they feel it attached.\nThey’re called an unlearned ordinary person who is attached to rebirth, old age, and death, to sorrow, lamentation, pain, sadness, and distress. They are attached to suffering, I say.\nWhen a learned noble disciple experiences painful physical feelings they don’t sorrow or wail or lament, beating their breast and falling into confusion.\nThey experience one feeling:\nphysical, not mental.\nIt’s like a person who is struck with an arrow,\nbut was not struck with a second arrow.\nThat person would experience the feeling of one arrow.\nIn the same way, when a learned noble disciple experiences painful physical feelings they don’t sorrow or wail or lament, beating their breast and falling into confusion.\nThey experience one feeling:\nphysical, not mental.\nWhen they’re touched by painful feeling, they don’t resist it.\nThere’s no underlying tendency for aversion towards painful feeling underlying that.\nWhen touched by painful feeling they don’t look forward to enjoying sensual pleasures.\nWhy is that?\nBecause a learned noble disciple understands an escape from painful feeling apart from sensual pleasures.\nSince they don’t look forward to enjoying sensual pleasures, there’s no underlying tendency to greed for pleasant feeling underlying that.\nThey truly understand feelings’ origin, disappearance, gratification, drawback, and escape.\nThere’s no underlying tendency to ignorance about neutral feeling underlying that.\nIf they feel a pleasant feeling, they feel it detached.\nIf they feel a painful feeling, they feel it detached.\nIf they feel a neutral feeling, they feel it detached.\nThey’re called a learned noble disciple who is detached from rebirth, old age, and death, from sorrow, lamentation, pain, sadness, and distress. They are detached from suffering, I say.\nThis is the difference between a learned noble disciple and an unlearned ordinary person.\nA wise and learned person does not not feel\nthe feeling of pleasure and pain.\nThis is the great difference of skill\nbetween the wise one and the ordinary.\nA learned person who has appraised the teaching\ndiscerns this world and the next.\nDesirable things don’t disturb their mind,\nnor are they repelled by the undesirable.\nBoth favoring and opposing\nare cleared and ended, and are no more.\nKnowing the stai",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "empathy",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn45.8",
+      "nikaya": "sn",
+      "collection": "SN 45.8",
+      "title_en": "Analysis of the Path",
+      "title_ko": "팔정도 분별 경",
+      "source_ref": "SN 45.8",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn45.8/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 45.8\n1. Ignorance\nAnalysis\nAt Sāvatthī.\n“Mendicants, I will teach and analyze for you the noble eightfold path.\nListen and apply your mind well, I will speak.”\n“Yes, sir,” they replied.\nThe Buddha said this:\n“And what is the noble eightfold path?\nIt is right view, right purpose, right speech, right action, right livelihood, right effort, right mindfulness, and right immersion.\nAnd what is right view?\nKnowing about suffering, the origin of suffering, the cessation of suffering, and the practice that leads to the cessation of suffering.\nThis is called right view.\nAnd what is right purpose?\nIt is the purpose of renunciation, good will, and harmlessness.\nThis is called right purpose.\nAnd what is right speech?\nRefraining from speech that’s false, backbiting, harsh, or nonsensical.\nThis is called right speech.\nAnd what is right action?\nRefraining from killing living creatures, stealing, and unchastity.\nThis is called right action.\nAnd what is right livelihood?\nIt’s when a noble disciple gives up wrong livelihood and earns a living by right livelihood.\nThis is called right livelihood.\nAnd what is right effort?\nIt’s when a mendicant generates enthusiasm, tries, makes an effort, exerts the mind, and strives so that bad, unskillful qualities don’t arise.\nThey generate enthusiasm, try, make an effort, exert the mind, and strive so that bad, unskillful qualities that have arisen are given up.\nThey generate enthusiasm, try, make an effort, exert the mind, and strive so that skillful qualities that have not arisen do arise.\nThey generate enthusiasm, try, make an effort, exert the mind, and strive so that skillful qualities that have arisen remain, are not lost, but increase, mature, and are fulfilled by development.\nThis is called right effort.\nAnd what is right mindfulness?\nIt’s when a mendicant meditates by observing an aspect of the body—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of feelings—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of the mind—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of principles—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThis is called right mindfulness.\nAnd what is right immersion?\nIt’s when a mendicant, quite secluded from sensual pleasures, secluded from unskillful qualities, enters and remains in the first absorption, which has the rapture and bliss born of seclusion, while placing the mind and keeping it connected.\nAs the placing of the mind and keeping it connected are stilled, they enter and remain in the second absorption, which has the rapture and bliss born of immersion, with internal clarity and mind at one, without placing the mind and keeping it connected.\nAnd with the fading away of rapture, they enter and remain in the third absorption, where they meditate with equanimity, mindful and aware, personally experiencing the bliss of which the noble ones declare, ‘Equanimous and mindful, one meditates in bliss.’\nWith the giving up of pleasure and pain and the disappearance of former happiness and sadness, they enter and remain in the fourth absorption, without pleasure or pain, with pure equanimity and mindfulness.\nThis is called right immersion.”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn47.2",
+      "nikaya": "sn",
+      "collection": "SN 47.2",
+      "title_en": "Mindful",
+      "title_ko": "마음챙기는 자 경",
+      "source_ref": "SN 47.2",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn47.2/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Linked Discourses 47.2\n1. In Ambapālī’s Mango Grove\nMindful\nAt one time the Buddha was staying near Vesālī, in Ambapālī’s mango grove.\nThere the Buddha addressed the mendicants,\n“Mendicants!”\n“Venerable sir,” they replied.\nThe Buddha said this:\n“Mendicants, a mendicant should live mindful and aware.\nThis is my instruction to you.\nAnd how is a mendicant mindful?\nIt’s when a mendicant meditates by observing an aspect of the body—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of feelings …\nmind …\nprinciples—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThat’s how a mendicant is mindful.\nAnd how is a mendicant aware?\nIt’s when a mendicant acts with situational awareness when going out and coming back; when looking ahead and aside; when bending and extending the limbs; when bearing the outer robe, bowl and robes; when eating, drinking, chewing, and tasting; when urinating and defecating; when walking, standing, sitting, sleeping, waking, speaking, and keeping silent.\nThat’s how a mendicant acts with situational awareness.\nA mendicant should live mindful and aware.\nThis is my instruction to you.”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn7",
+      "nikaya": "mn",
+      "collection": "MN 7",
+      "title_en": "The Simile of the Cloth",
+      "title_ko": "베 비유 경",
+      "source_ref": "MN 7",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/mn7/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 7\nThe Simile of the Cloth\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.\nThere the Buddha addressed the mendicants,\n“Mendicants!”\n“Venerable sir,” they replied.\nThe Buddha said this:\n“Suppose, mendicants, there was a cloth that was dirty and soiled.\nNo matter what dye the dyer applied—whether blue or yellow or red or magenta—it would look poorly dyed and impure in color.\nWhy is that?\nBecause of the impurity of the cloth.\nIn the same way, when the mind is corrupt, a bad destiny is to be expected.\nSuppose there was a cloth that was pure and clean.\nNo matter what dye the dyer applied—whether blue or yellow or red or magenta—it would look well dyed and pure in color.\nWhy is that?\nBecause of the purity of the cloth.\nIn the same way, when the mind isn’t corrupt, a good destiny is to be expected.\nAnd what are the corruptions of the mind?\nCovetousness and immoral greed, ill will, anger, acrimony, disdain, contempt, jealousy, stinginess, deceit, deviousness, obstinacy, aggression, conceit, arrogance, vanity, and negligence are corruptions of the mind.\nA mendicant who understands that covetousness and immoral greed are corruptions of the mind gives them up.\nA mendicant who understands that ill will …\nnegligence is a corruption of the mind gives it up.\nWhen they have understood these corruptions of the mind\nfor what they are, and have given them up,\nthey have experiential confidence in the Buddha:\n‘That Blessed One is perfected, a fully awakened Buddha, accomplished in knowledge and conduct, holy, knower of the world, supreme guide for those fit for training, teacher of gods and humans, awakened, blessed.’\nThey have experiential confidence in the teaching:\n‘The teaching is well explained by the Buddha—apparent in the present life, immediately effective, inviting inspection, relevant, so that sensible people can know it for themselves.’\nThey have experiential confidence in the Saṅgha:\n‘The Saṅgha of the Buddha’s disciples is practicing the way that’s good, direct, systematic, and proper. It consists of the four pairs, the eight individual persons. This is the Saṅgha of the Buddha’s disciples that is worthy of offerings dedicated to the gods, worthy of hospitality, worthy of a religious donation, worthy of greeting with cupped palms, and is the supreme field of merit for the world.’\nWhen a mendicant has discarded, eliminated, released, given up, and relinquished to this extent, thinking, ‘I have experiential confidence in the Buddha …\nthe teaching …\nthe Saṅgha,’ they find inspiration in the meaning and the teaching, and find joy connected with the teaching.\nThinking: ‘I have discarded, eliminated, released, given up, and relinquished to this extent,’ they find inspiration in the meaning and the teaching, and find joy connected with the teaching.\nWhen they’re joyful, rapture springs up. When the mind is full of rapture, the body becomes tranquil. When the body is tranquil, they feel bliss. And when they’re blissful, the mind becomes immersed in samādhi.\nWhen a mendicant of such ethics, such qualities, and such wisdom eats boiled fine rice with the dark grains picked out and served with many soups and sauces, that is no obstacle for them.\nCompare with cloth that is dirty and soiled; it can be made pure and clean by pure water. Or native gold, which can be made pure and bright by a forge.\nIn the same way, when a mendicant of such ethics, such qualities, and such wisdom eats boiled fine rice with the dark grains picked out and served with many soups and sauces, that is no obstacle for them.\nThey meditate spreading a heart full of love to one direction, and to the second, and to the third, and to the fourth. In the same way above, below, across, everywhere, all around, they spread a heart full of love to the whole world—abundant, expansive, limitless, free of enmity and ill will.\nThey meditate spreading a heart full of compassion to one direction, and to the second",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn28",
+      "nikaya": "mn",
+      "collection": "MN 28",
+      "title_en": "The Great Elephant Footprint Simile",
+      "title_ko": "코끼리 발자국 비유 대경",
+      "source_ref": "MN 28",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn28/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 28\nThe Longer Simile of the Elephant’s Footprint\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.\nThere Sāriputta addressed the mendicants,\n“Reverends, mendicants!”\n“Reverend,” they replied.\nSāriputta said this:\n“The footprints of all creatures that walk can fit inside an elephant’s footprint, so an elephant’s footprint is said to be the biggest of them all.\nIn the same way, all skillful qualities are included in the four noble truths.\nWhat four?\nThe noble truths of suffering, the origin of suffering, the cessation of suffering, and the practice that leads to the cessation of suffering.\nAnd what is the noble truth of suffering?\nRebirth is suffering; old age is suffering; death is suffering; sorrow, lamentation, pain, sadness, and distress are suffering; not getting what you wish for is suffering. In brief, the five grasping aggregates are suffering.\nAnd what are the five grasping aggregates?\nThey are as follows: the grasping aggregates of form, feeling, perception, choices, and consciousness.\nAnd what is the grasping aggregate of form?\nThe four principal states, and form derived from the four principal states.\nAnd what are the four principal states?\nThe elements of earth, water, fire, and air.\nAnd what is the earth element?\nThe earth element may be interior or exterior.\nAnd what is the interior earth element?\nAnything internal, personal, that’s hard, solid, and appropriated. This includes:\nhead hair, body hair, nails, teeth, skin, flesh, sinews, bones, bone marrow, kidneys, heart, liver, diaphragm, spleen, lungs, intestines, mesentery, undigested food, feces; or anything else internal, personal, that’s hard, solid, and appropriated.\nThis is called the interior earth element.\nThe interior earth element and the exterior earth element are just the earth element.\nThis should be truly seen with right understanding like this: ‘This is not mine, I am not this, this is not my self.’\nWhen you truly see with right understanding, you grow disillusioned with the earth element, detaching the mind from the earth element.\nThere comes a time when the exterior water element flares up.\nAt that time the exterior earth element vanishes.\nSo for all its great age, the earth element will be revealed as impermanent, liable to end, vanish, and perish.\nWhat then of this ephemeral body appropriated by craving? Rather than ‘I’ or ‘mine’ or ‘I am’, they consider it to be none of these things.\nIf others abuse, attack, harass, and trouble that mendicant, they understand:\n‘This painful feeling born of ear contact has arisen in me.\nThat’s dependent, not independent.\nDependent on what?\nDependent on contact.’\nThey see that contact, feeling, perception, choices, and consciousness are impermanent.\nBased on that element alone, their mind leaps forth, gains confidence, settles down, and becomes decided.\nOthers might treat that mendicant with disliking, loathing, and detestation,\nstriking them with fists, stones, sticks, and swords.\nThey understand:\n‘This body is such that fists, stones, sticks, and swords strike it.\nBut the Buddha has said in the Advice on the Simile of the Saw:\n“Even if low-down bandits were to sever you limb from limb with a two-handed saw, anyone who had a malevolent thought on that account would not be following my instructions.”\nMy energy shall be roused up and unflagging, my mindfulness established and lucid, my body tranquil and undisturbed, and my mind immersed in samādhi and unified.\nGladly now, let fists, stones, sticks, and swords strike this body! For this is how the instructions of the Buddhas are followed.’\nWhile recollecting the Buddha, the teaching, and the Saṅgha in this way, equanimity based on the skillful may not become stabilized in them.\nIn that case they stir up a sense of urgency:\n‘It’s my loss, my misfortune,\nthat while recollecting the Buddha, the teaching, and the Saṅgha in this way, equanimity based on the skillful does not become stabilized i",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn36",
+      "nikaya": "mn",
+      "collection": "MN 36",
+      "title_en": "The Greater Discourse with Saccaka",
+      "title_ko": "삿짜까 대경",
+      "source_ref": "MN 36",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn36/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 36\nThe Longer Discourse With Saccaka\nSo I have heard.\nAt one time the Buddha was staying near Vesālī, at the Great Wood, in the hall with the peaked roof.\nNow at that time in the morning the Buddha, being properly dressed, took his bowl and robe, wishing to enter Vesālī for alms.\nThen as Saccaka, the son of Jain parents, was going for a walk he approached the hall with the peaked roof in the Great Wood.\nVenerable Ānanda saw him coming off in the distance,\nand said to the Buddha,\n“Sir, Saccaka, the son of Jain parents, is coming. He’s a controversialist who pretends to be astute and is deemed holy by many people.\nHe wants to discredit the Buddha, the teaching, and the Saṅgha.\nPlease, sir, sit for an hour out of sympathy.”\nThe Buddha sat on the seat spread out.\nThen Saccaka went up to the Buddha, and exchanged greetings with him. When the greetings and polite conversation were over, he sat down to one side and said to the Buddha,\n“Worthy Gotama, there are some ascetics and brahmins who live committed to the practice of developing physical endurance, without developing the mind.\nThey suffer painful physical feelings.\nThis happened to someone once. Their thighs became paralyzed, their heart burst, hot blood gushed from their mouth, and they went mad and lost their mind.\nTheir mind was subject to the body, and the body had power over it.\nWhy is that?\nBecause their mind was not developed.\nThere are some ascetics and brahmins who live committed to the practice of developing the mind, without developing physical endurance.\nThey suffer painful mental feelings.\nThis happened to someone once. Their thighs became paralyzed, their heart burst, hot blood gushed from their mouth, and they went mad and lost their mind.\nTheir body was subject to the mind, and the mind had power over it.\nWhy is that?\nBecause their physical endurance was not developed.\nIt occurs to me that\nThe worthy Gotama’s disciples must live committed to the practice of developing the mind, without developing physical endurance.”\n“But Aggivessana, what have you heard about the development of physical endurance?”\n“Take, for example,\nNanda Vaccha, Kisa Saṅkicca, and the bamboo-staffed ascetic Gosāla.\nThey go naked, ignoring conventions. They lick their hands, and don’t come or wait when called. They don’t consent to food brought to them, or food prepared on their behalf, or an invitation for a meal.\nThey don’t receive anything from a pot or bowl; or from someone who keeps sheep, or who has a weapon or a shovel in their home; or where a couple is eating; or where there is a woman who is pregnant, breastfeeding, or who lives with a man; or where there’s a hound waiting or flies buzzing. They accept no fish or meat or beer or wine, and drink no fermented gruel.\nThey go to just one house for alms, taking just one mouthful, or two houses and two mouthfuls, up to seven houses and seven mouthfuls.\nThey feed on one saucer a day, two saucers a day, up to seven saucers a day.\nThey eat once a day, once every second day, up to once a week, and so on, even up to once a fortnight. They live committed to the practice of eating food at set intervals.”\n“But Aggivessana, do they get by on so little?”\n“No, worthy Gotama.\nSometimes they eat luxury fresh and cooked foods and drink a variety of luxury beverages.\nThey gather their body’s strength, build it up, and get fat.”\n“What they earlier gave up, they later got back. That is how there is the increase and decrease of this body.\nBut Aggivessana, what have you heard about development of the mind?”\nWhen Saccaka was questioned by the Buddha about development of the mind, he was stumped.\nSo the Buddha said to Saccaka,\n“The development of physical endurance that you have described is not the legitimate development of physical endurance in the training of the Noble One.\nAnd since you don’t even understand the development of physical endurance, how can you possibly understand the development of the mind?\nStill, as to how someone is und",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn43",
+      "nikaya": "mn",
+      "collection": "MN 43",
+      "title_en": "The Greater Classification",
+      "title_ko": "교리문답 대경",
+      "source_ref": "MN 43",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn43/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 43\nThe Great Elaboration\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.\nThen in the late afternoon, Venerable Mahākoṭṭhita came out of retreat, went to Venerable Sāriputta, and exchanged greetings with him.\nWhen the greetings and polite conversation were over, he sat down to one side and said to Sāriputta:\n“Reverend, they speak of ‘a witless person’.\nHow is a witless person defined?”\n“Reverend, they’re called witless because they don’t understand.\nAnd what don’t they understand?\nThey don’t understand: ‘This is suffering’ … ‘This is the origin of suffering’ … ‘This is the cessation of suffering’ … ‘This is the practice that leads to the cessation of suffering.’\nThey’re called witless because they don’t understand.”\nSaying “Good, reverend,” Mahākoṭṭhita approved and agreed with what Sāriputta said. Then he asked another question:\n“They speak of ‘a wise person’.\nHow is a wise person defined?”\n“They’re called wise because they understand.\nAnd what do they understand?\nThey understand: ‘This is suffering’ … ‘This is the origin of suffering’ … ‘This is the cessation of suffering’ … ‘This is the practice that leads to the cessation of suffering.’\nThey’re called wise because they understand.”\n“They speak of ‘consciousness’.\nHow is consciousness defined?”\n“It’s called consciousness because it cognizes.\nAnd what does it cognize?\nIt cognizes ‘pleasure’ and ‘pain’ and ‘neutral’.\nIt’s called consciousness because it cognizes.”\n“Wisdom and consciousness—\nare these things mixed or separate?\nAnd can we completely disentangle them so as to describe the difference between them?”\n“Wisdom and consciousness—\nthese things are mixed, not separate.\nAnd you can never completely disentangle them so as to describe the difference between them.\nFor you understand what you cognize, and you cognize what you understand.\nThat’s why these things are mixed, not separate.\nAnd you can never completely disentangle them so as to describe the difference between them.”\n“Wisdom and consciousness—\nwhat is the difference between these things that are mixed, not separate?”\n“The difference between these things is that wisdom should be developed, while consciousness should be completely understood.”\n“They speak of this thing called ‘feeling’.\nHow is feeling defined?”\n“It’s called feeling because it feels.\nAnd what does it feel?\nIt feels pleasure, pain, and neutral.\nIt’s called feeling because it feels.”\n“They speak of this thing called ‘perception’.\nHow is perception defined?”\n“It’s called perception because it perceives.\nAnd what does it perceive?\nIt perceives blue, yellow, red, and white.\nIt’s called perception because it perceives.”\n“Feeling, perception, and consciousness—\nare these things mixed or separate?\nAnd can we completely disentangle them so as to describe the difference between them?”\n“Feeling, perception, and consciousness—\nthese things are mixed, not separate.\nAnd you can never completely disentangle them so as to describe the difference between them.\nFor you perceive what you feel, and you cognize what you perceive.\nThat’s why these things are mixed, not separate.\nAnd you can never completely disentangle them so as to describe the difference between them.”\n“What can be known by purified mind consciousness released from the five senses?”\n“Aware that ‘space is infinite’ it can know the dimension of infinite space. Aware that ‘consciousness is infinite’ it can know the dimension of infinite consciousness. Aware that ‘there is nothing at all’ it can know the dimension of nothingness.”\n“How do you understand something that can be known?”\n“You understand something that can be known with the eye of wisdom.”\n“What is the goal of wisdom?”\n“The goal of wisdom is direct knowledge, complete understanding, and giving up.”\n“How many conditions are there for the arising of right view?”\n“There are two conditions for the arising of right view:\nthe voice of another and rational application of mind",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn44",
+      "nikaya": "mn",
+      "collection": "MN 44",
+      "title_en": "The Shorter Classification",
+      "title_ko": "교리문답 소경",
+      "source_ref": "MN 44",
+      "truth_tags": [
+        "집",
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn44/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 44\nThe Shorter Elaboration\nSo I have heard.\nAt one time the Buddha was staying near Rājagaha, in the Bamboo Grove, the squirrels’ feeding ground.\nThen the layman Visākha went to see the nun Dhammadinnā, bowed, sat down to one side, and said to her:\n“Ma’am, they speak of this thing called ‘substantial reality’.\nWhat is this substantial reality that the Buddha spoke of?”\n“Visākha, the Buddha said that these five grasping aggregates are substantial reality.\nThat is, the grasping aggregates of form, feeling, perception, choices, and consciousness.\nThe Buddha said that these five grasping aggregates are substantial reality.”\nSaying “Good, ma’am,” Visākha approved and agreed with what Dhammadinnā said. Then he asked another question:\n“Ma’am, they speak of this thing called ‘the origin of substantial reality’.\nWhat is the origin of substantial reality that the Buddha spoke of?”\n“It’s the craving that leads to future lives, mixed up with relishing and greed, taking pleasure there wherever it alights. That is,\ncraving for sensual pleasures, craving for existence, and craving for nonexistence.\nThe Buddha said that this is the origin of substantial reality.”\n“Ma’am, they speak of this thing called ‘the cessation of substantial reality’.\nWhat is the cessation of substantial reality that the Buddha spoke of?”\n“It’s the fading away and cessation of that very same craving with no residue left behind; giving it away, letting it go, releasing it, and not clinging to it.\nThe Buddha said that this is the cessation of substantial reality.”\n“Ma’am, they speak of the practice that leads to the cessation of substantial reality.\nWhat is the practice that leads to the cessation of substantial reality that the Buddha spoke of?”\n“The practice that leads to the cessation of substantial reality that the Buddha spoke of is simply this noble eightfold path, that is:\nright view, right purpose, right speech, right action, right livelihood, right effort, right mindfulness, and right immersion.”\n“But ma’am, is that grasping the exact same thing as the five grasping aggregates? Or is grasping one thing and the five grasping aggregates another?”\n“That grasping is not the exact same thing as the five grasping aggregates. Nor is grasping one thing and the five grasping aggregates another.\nThe desire and greed for the five grasping aggregates is the grasping there.”\n“But ma’am, how does substantialist view come about?”\n“It’s when an unlearned ordinary person has not seen the noble ones, and is neither skilled nor trained in the teaching of the noble ones. They’ve not seen true persons, and are neither skilled nor trained in the teaching of the true persons.\nThey regard form as self, self as having form, form in self, or self in form.\nThey regard feeling …\nperception …\nchoices …\nconsciousness as self, self as having consciousness, consciousness in self, or self in consciousness.\nThat’s how substantialist view comes about.”\n“But ma’am, how does substantialist view not come about?”\n“It’s when a learned noble disciple has seen the noble ones, and is skilled and trained in the teaching of the noble ones. They’ve seen true persons, and are skilled and trained in the teaching of the true persons.\nThey don’t regard form as self, self as having form, form in self, or self in form.\nThey don’t regard feeling …\nperception …\nchoices …\nconsciousness as self, self as having consciousness, consciousness in self, or self in consciousness.\nThat’s how substantialist view does not come about.”\n“But ma’am, what is the noble eightfold path?”\n“It is simply this noble eightfold path, that is:\nright view, right purpose, right speech, right action, right livelihood, right effort, right mindfulness, and right immersion.”\n“But ma’am, is the noble eightfold path conditioned or unconditioned?”\n“The noble eightfold path is conditioned.”\n“Are the three spectrums of practice included in the noble eightfold path? Or is the noble eightfold path included in the three spectrums of pra",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn62",
+      "nikaya": "mn",
+      "collection": "MN 62",
+      "title_en": "The Greater Exhortation to Rāhula",
+      "title_ko": "라훌라 교계 대경",
+      "source_ref": "MN 62",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn62/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 62\nThe Longer Advice to Rāhula\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.\nThen the Buddha robed up in the morning and, taking his bowl and robe, entered Sāvatthī for alms.\nAnd Venerable Rāhula also robed up and followed behind the Buddha.\nThen the Buddha looked back at Rāhula and said,\n“Rāhula, you should truly see any kind of form at all—past, future, or present; internal or external; solid or subtle; inferior or superior; far or near: <em>all</em> form—with right understanding: ‘This is not mine, I am not this, this is not my self.’”\n“Only form, Blessed One? Only form, Holy One?”\n“Form, Rāhula, as well as feeling and perception and choices and consciousness.”\nThen Rāhula thought, “Who would go to the village for alms today after being advised directly by the Buddha?” Turning back, he sat down cross-legged at the root of a certain tree, setting his body straight, and bringing mindfulness to the present.\nVenerable Sāriputta saw him sitting there,\nand addressed him,\n“Rāhula, develop mindfulness of breathing.\nWhen mindfulness of breathing is developed and cultivated it’s very fruitful and beneficial.”\nThen in the late afternoon, Rāhula came out of retreat, went to the Buddha, bowed, sat down to one side, and said to him:\n“Sir, how is mindfulness of breathing developed and cultivated to be very fruitful and beneficial?”\n“Rāhula, the interior earth element is anything internal, personal, that’s hard, solid, and appropriated. This includes:\nhead hair, body hair, nails, teeth, skin, flesh, sinews, bones, bone marrow, kidneys, heart, liver, diaphragm, spleen, lungs, intestines, mesentery, undigested food, feces; or anything else internal, personal, that’s hard, solid, and appropriated.\nThis is called the interior earth element.\nThe interior earth element and the exterior earth element are just the earth element.\nThis should be truly seen with right understanding like this: ‘This is not mine, I am not this, this is not my self.’\nWhen you truly see with right understanding, you grow disillusioned with the earth element, detaching the mind from the earth element.\nAnd what is the water element?\nThe water element may be interior or exterior.\nAnd what is the interior water element?\nAnything internal, personal, that’s water, watery, and appropriated. This includes:\nbile, phlegm, pus, blood, sweat, fat, tears, grease, saliva, snot, synovial fluid, urine; or anything else internal, personal, that’s water, watery, and appropriated.\nThis is called the interior water element.\nThe interior water element and the exterior water element are just the water element.\nThis should be truly seen with right understanding like this: ‘This is not mine, I am not this, this is not my self.’\nWhen you truly see with right understanding, you grow disillusioned with the water element, detaching the mind from the water element.\nAnd what is the fire element?\nThe fire element may be interior or exterior.\nAnd what is the interior fire element?\nAnything internal, personal, that’s fire, fiery, and appropriated. This includes:\nthat which warms, that which ages, that which heats you up when feverish, that which properly digests food and drink; or anything else internal, personal, that’s fire, fiery, and appropriated.\nThis is called the interior fire element.\nThe interior fire element and the exterior fire element are just the fire element.\nThis should be truly seen with right understanding like this: ‘This is not mine, I am not this, this is not my self.’\nWhen you truly see with right understanding, you grow disillusioned with the fire element, detaching the mind from the fire element.\nAnd what is the air element?\nThe air element may be interior or exterior.\nAnd what is the interior air element?\nAnything internal, personal, that’s air, airy, and appropriated. This includes:\nwinds that go up or down, winds in the belly or the bowels, winds that flow through the limbs, in-breaths and out-br",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn118",
+      "nikaya": "mn",
+      "collection": "MN 118",
+      "title_en": "Breathing Mindfulness",
+      "title_ko": "들숨날숨에 대한 마음챙김 경",
+      "source_ref": "MN 118",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn118/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 118\nMindfulness of Breathing\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in the stilt longhouse of Migāra’s mother in the Eastern Monastery, together with several well-known senior disciples, such as\nthe venerables Sāriputta, Mahāmoggallāna, Mahākassapa, Mahākaccāna, Mahākoṭṭhita, Mahākappina, Mahācunda, Anuruddha, Revata, Ānanda, and others.\nNow at that time the senior mendicants were advising and instructing the junior mendicants.\nSome senior mendicants instructed ten mendicants, while some instructed twenty, thirty, or forty.\nBeing instructed by the senior mendicants, the junior mendicants realized a higher distinction than they had before.\nNow, at that time it was the sabbath—the full moon on the fifteenth day—and the Buddha was sitting surrounded by a Saṅgha of monks for the invitation to admonish.\nThen the Buddha looked around the Saṅgha of mendicants, who were so very silent. He addressed them:\n“I am satisfied, mendicants, with this practice.\nMy heart is satisfied with this practice.\nSo you should rouse up even more energy for attaining the unattained, achieving the unachieved, and realizing the unrealized.\nI will wait here in Sāvatthī for the Komudī full moon of the fourth month.”\nMendicants from around the country heard about this,\nand came down to Sāvatthī to see the Buddha.\nAnd those senior mendicants instructed the junior mendicants even more.\nSome senior mendicants instructed ten mendicants, while some instructed twenty, thirty, or forty.\nBeing instructed by the senior mendicants, the junior mendicants realized a higher distinction than they had before.\nNow, at that time it was the sabbath—the Komudī full moon on the fifteenth day of the fourth month—and the Buddha was sitting in the open surrounded by a Saṅgha of monks.\nThen the Buddha looked around the Saṅgha of mendicants, who were so very silent. He addressed them:\n“This assembly has no chaff, mendicants, it is free of chaff, pure, and consolidated in the core.\nSuch is this Saṅgha of mendicants, such is this assembly!\nAn assembly such as this is worthy of offerings dedicated to the gods, worthy of hospitality, worthy of a religious donation, worthy of greeting with cupped palms, and is the supreme field of merit for the world.\nSuch is this Saṅgha of mendicants, such is this assembly!\nFor an assembly such as this, giving little becomes much, while giving much becomes even more.\nSuch is this Saṅgha of mendicants, such is this assembly!\nAn assembly such as this is rarely seen in the world.\nSuch is this Saṅgha of mendicants, such is this assembly!\nAn assembly such as this is worth traveling many leagues to see, even if you have to carry your own provisions in a knapsack.\nFor in this Saṅgha there are perfected mendicants, who have ended the defilements, completed the spiritual journey, done what had to be done, laid down the burden, achieved their heart’s goal, utterly ended the fetter of continued existence, and are rightly freed through enlightenment.\nThere are such mendicants in this Saṅgha.\nIn this Saṅgha there are mendicants who, with the ending of the five lower fetters are reborn spontaneously. They are extinguished there, and are not liable to return from that world.\nThere are such mendicants in this Saṅgha.\nIn this Saṅgha there are mendicants who, with the ending of three fetters, and the weakening of greed, hate, and delusion, are once-returners. They come back to this world once only, then make an end of suffering.\nThere are such mendicants in this Saṅgha.\nIn this Saṅgha there are mendicants who, with the ending of three fetters are stream-enterers, not liable to be reborn in the underworld, assured, destined for awakening.\nThere are such mendicants in this Saṅgha.\nIn this Saṅgha there are mendicants who are committed to developing the four kinds of mindfulness meditation …\nthe four right efforts …\nthe four bases of psychic power …\nthe five faculties …\nthe five powers …\nthe seven awakening factors …\nthe noble eight",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "mn119",
+      "nikaya": "mn",
+      "collection": "MN 119",
+      "title_en": "Mindfulness of the Body",
+      "title_ko": "몸에 대한 마음챙김 경",
+      "source_ref": "MN 119",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn119/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Middle Discourses 119\nMindfulness of the Body\nSo I have heard.\nAt one time the Buddha was staying near Sāvatthī in Jeta’s Grove, Anāthapiṇḍika’s monastery.\nThen after the meal, on return from almsround, several mendicants sat together in the assembly hall and this discussion came up among them.\n“It’s incredible, reverends, it’s amazing,\nhow the Blessed One, who knows and sees, the perfected one, the fully awakened Buddha has said that mindfulness of the body, when developed and cultivated, is very fruitful and beneficial.”\nBut their conversation was left unfinished. Then the Buddha came out of retreat and went to the assembly hall. He sat on the seat spread out\nand addressed the mendicants,\n“Mendicants, what were you sitting talking about just now? What conversation was left unfinished?”\nSo the mendicants told him what they had been talking about. The Buddha said:\n“And how, mendicants, is mindfulness of the body developed and cultivated to be very fruitful and beneficial?\nIt’s when a mendicant—gone to a wilderness, or to the root of a tree, or to an empty hut—sits down cross-legged, sets their body straight, and brings mindfulness to the present.\nJust mindful, they breathe in. Mindful, they breathe out.\nBreathing in heavily they know: ‘I’m breathing in heavily.’ Breathing out heavily they know: ‘I’m breathing out heavily.’\nWhen breathing in lightly they know: ‘I’m breathing in lightly.’ Breathing out lightly they know: ‘I’m breathing out lightly.’\nThey practice like this: ‘I’ll breathe in experiencing the whole body.’ They practice like this: ‘I’ll breathe out experiencing the whole body.’\nThey practice like this: ‘I’ll breathe in stilling the physical process.’ They practice like this: ‘I’ll breathe out stilling the physical process.’\nAs they meditate like this—diligent, keen, and resolute—memories and thoughts tied to domestic life are given up.\nTheir mind becomes stilled internally; it settles, unifies, and becomes immersed in samādhi.\nThat’s how a mendicant develops mindfulness of the body.\nFurthermore, when a mendicant is walking they know ‘I am walking’. When standing they know ‘I am standing’. When sitting they know ‘I am sitting’. And when lying down they know ‘I am lying down’.\nWhatever posture their body is in, they know it.\nAs they meditate like this—diligent, keen, and resolute—memories and thoughts tied to domestic life are given up.\nTheir mind becomes stilled internally; it settles, unifies, and becomes immersed in samādhi.\nThat too is how a mendicant develops mindfulness of the body.\nFurthermore, a mendicant acts with situational awareness when going out and coming back; when looking ahead and aside; when bending and extending the limbs; when bearing the outer robe, bowl and robes; when eating, drinking, chewing, and tasting; when urinating and defecating; when walking, standing, sitting, sleeping, waking, speaking, and keeping silent.\nAs they meditate like this—diligent, keen, and resolute—memories and thoughts tied to domestic life are given up.\nTheir mind becomes stilled internally; it settles, unifies, and becomes immersed in samādhi.\nThat too is how a mendicant develops mindfulness of the body.\nFurthermore, a mendicant examines their own body, up from the soles of the feet and down from the tips of the hairs, wrapped in skin and full of many kinds of filth.\n‘In this body there is head hair, body hair, nails, teeth, skin, flesh, sinews, bones, bone marrow, kidneys, heart, liver, diaphragm, spleen, lungs, intestines, mesentery, undigested food, feces, bile, phlegm, pus, blood, sweat, fat, tears, grease, saliva, snot, synovial fluid, urine.’\nIt’s as if there were a bag with openings at both ends, filled with various kinds of grains, such as\nfine rice, wheat, mung beans, peas, sesame, and ordinary rice.\nAnd a person with clear eyes were to open it and examine the contents:\n‘These grains are fine rice, these are wheat, these are mung beans, these are peas, these are sesame, and these are ordinary rice.’\nIn the s",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "an3.136",
+      "nikaya": "an",
+      "collection": "AN 3.136",
+      "title_en": "Greed",
+      "title_ko": "탐욕 경",
+      "source_ref": "AN 3.136",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/an3.136/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Numbered Discourses 3.136\n14. A Warrior\nArising\n“Mendicants, whether Realized Ones arise or not, this law of nature persists, this regularity of natural principles, this surety of natural principles:\nall conditions are impermanent.\nA Realized One awakens to this and comprehends it,\nthen he explains, teaches, asserts, establishes, clarifies, analyzes, and reveals it:\n‘All conditions are impermanent.’\nWhether Realized Ones arise or not, this law of nature persists, this regularity of natural principles, this surety of natural principles:\nall conditions are suffering.\nA Realized One awakens to this and comprehends it,\nthen he explains, teaches, asserts, establishes, clarifies, analyzes, and reveals it:\n‘All conditions are suffering.’\nWhether Realized Ones arise or not, this law of nature persists, this regularity of natural principles, this surety of natural principles:\nall things are not-self.\nA Realized One awakens to this and comprehends it,\nthen he explains, teaches, asserts, establishes, clarifies, analyzes, and reveals it:\n‘All things are not-self.’”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "an4.41",
+      "nikaya": "an",
+      "collection": "AN 4.41",
+      "title_en": "Meditation Development",
+      "title_ko": "삼매 수행 경",
+      "source_ref": "AN 4.41",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/an4.41/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Numbered Discourses 4.41\n5. With Rohitassa\nWays of Developing Immersion Further\n“Mendicants, there are these four ways of developing immersion further.\nWhat four?\nThere is a way of developing immersion further that leads to blissful meditation in this life.\nThere is a way of developing immersion further that leads to gaining knowledge and vision.\nThere is a way of developing immersion further that leads to mindfulness and awareness.\nThere is a way of developing immersion further that leads to the ending of defilements.\nAnd what is the way of developing immersion further that leads to blissful meditation in this life?\nIt’s when a mendicant, quite secluded from sensual pleasures, secluded from unskillful qualities, enters and remains in the first absorption … second absorption … third absorption … fourth absorption.\nThis is the way of developing immersion further that leads to blissful meditation in this life.\nAnd what is the way of developing immersion further that leads to gaining knowledge and vision?\nIt’s when a mendicant applies their mind to the perception of light, focusing on the perception of day:\nas by day, so by night; as by night, so by day.\nAnd so, with an open and unenveloped heart, they develop a mind that’s full of radiance.\nThis is the way of developing immersion further that leads to gaining knowledge and vision.\nAnd what is the way of developing immersion further that leads to mindfulness and awareness?\nIt’s when a mendicant knows feelings as they arise, as they remain, and as they go away.\nThey know perceptions as they arise, as they remain, and as they go away. They know thoughts as they arise, as they remain, and as they go away.\nThis is the way of developing immersion further that leads to mindfulness and awareness.\nAnd what is the way of developing immersion further that leads to the ending of defilements?\nIt’s when a mendicant meditates observing rise and fall in the five grasping aggregates.\n‘Such is form, such is the origin of form, such is the ending of form.\nSuch is feeling, such is the origin of feeling, such is the ending of feeling.\nSuch is perception, such is the origin of perception, such is the ending of perception.\nSuch are choices, such is the origin of choices, such is the ending of choices.\nSuch is consciousness, such is the origin of consciousness, such is the ending of consciousness.’\nThis is the way of developing immersion further that leads to the ending of defilements.\nThese are the four ways of developing immersion further.\nAnd it was in this connection that I said in ‘The Way to the Far Shore’, in ‘The Questions of Puṇṇaka’:\n‘Having appraised the world high and low,\nthere is nothing in the world that disturbs them.\nPeaceful, unclouded, untroubled, <j>with no need for hope,\nthey’ve crossed over rebirth and old age, I declare.’”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "an10.2",
+      "nikaya": "an",
+      "collection": "AN 10.2",
+      "title_en": "Intentional Action",
+      "title_ko": "의도적 행위 경",
+      "source_ref": "AN 10.2",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/an10.2/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Numbered Discourses 10.2\n1. Benefits\nMaking a Wish\n“Mendicants, an ethical person, who has fulfilled ethical conduct, need not make a wish:\n‘May I have no regrets!’\nIt’s only natural that an ethical person has no regrets.\nWhen you have no regrets you need not make a wish:\n‘May I feel joy!’\nIt’s only natural that joy springs up when you have no regrets.\nWhen you feel joy you need not make a wish:\n‘May I experience rapture!’\nIt’s only natural that rapture arises when you’re joyful.\nWhen your mind is full of rapture you need not make a wish:\n‘May my body become tranquil!’\nIt’s only natural that your body becomes tranquil when your mind is full of rapture.\nWhen your body is tranquil you need not make a wish:\n‘May I feel bliss!’\nIt’s only natural to feel bliss when your body is tranquil.\nWhen you feel bliss you need not make a wish:\n‘May my mind be immersed in samādhi!’\nIt’s only natural for the mind to be immersed in samādhi when you feel bliss.\nWhen your mind is immersed in samādhi you need not make a wish:\n‘May I truly know and see!’\nIt’s only natural to truly know and see when your mind is immersed in samādhi.\nWhen you truly know and see you need not make a wish:\n‘May I become disillusioned and dispassionate!’\nIt’s only natural to become disillusioned and dispassionate when you truly know and see.\nWhen you’re disillusioned and dispassionate you need not make a wish:\n‘May I realize the knowledge and vision of freedom!’\nIt’s only natural to realize the knowledge and vision of freedom when you’re disillusioned and dispassionate.\nAnd so, mendicants, the knowledge and vision of freedom is the goal and benefit of disillusionment and dispassion.\nDisillusionment and dispassion is the goal and benefit of truly knowing and seeing.\nTruly knowing and seeing is the goal and benefit of immersion.\nImmersion is the goal and benefit of bliss.\nBliss is the goal and benefit of tranquility.\nTranquility is the goal and benefit of rapture.\nRapture is the goal and benefit of joy.\nJoy is the goal and benefit of not having regrets.\nNot having regrets is the goal and benefit of skillful ethics.\nAnd so, mendicants, good qualities flow on and fill up from one to the other, for going from the near shore to the far shore.”",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "dn2",
+      "nikaya": "dn",
+      "collection": "DN 2",
+      "title_en": "The Fruits of the Spiritual Life",
+      "title_ko": "사문과 경",
+      "source_ref": "DN 2",
+      "truth_tags": [
+        "멸",
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dn2/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Long Discourses 2\nThe Fruits of the Ascetic Life\n1. A Discussion With the King’s Ministers\nSo I have heard.\nAt one time the Buddha was staying near Rājagaha in the Mango Grove of Jīvaka Komārabhacca, together with a large Saṅgha of 1,250 mendicants.\nNow, at that time it was the sabbath—the Komudī full moon on the fifteenth day of the fourth month—and King Ajātasattu of Magadha, son of the princess of Videha, was sitting upstairs in the royal longhouse surrounded by his ministers.\nThen Ajātasattu of Magadha, son of the princess of Videha, expressed this heartfelt sentiment,\n“Oh, sirs, this moonlit night is so very delightful, so beautiful, so glorious, so lovely, so striking.\nNow, what ascetic or brahmin might I pay homage to today, paying homage to whom my mind might find peace?”\nWhen he had spoken, one of the king’s ministers said to him,\n“Sire, Pūraṇa Kassapa leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\nAnother of the king’s ministers said to him,\n“Sire, the bamboo-staffed ascetic Gosāla leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\nAnother of the king’s ministers said to him,\n“Sire, Ajita of the hair blanket leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\nAnother of the king’s ministers said to him,\n“Sire, Pakudha Kaccāyana leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\nAnother of the king’s ministers said to him,\n“Sire, Sañjaya Belaṭṭhiputta leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\nAnother of the king’s ministers said to him,\n“Sire, the Jain ascetic of the Ñātika clan leads an order and a community, and tutors a community. He’s a well-known and famous religious founder, deemed holy by many people. He is of long standing, long gone forth; he is advanced in years and has reached the final stage of life.\nLet Your Majesty pay homage to him.\nHopefully in so doing your mind will find peace.”\nBut when he had spoken, the king kept silent.\n2. A Discussion With Jīvaka Komārabhacca\nNow at that time Jīvaka Komārabhacca was sitting silently not far from the king.\nThen the king said to him,\n“But my dear Jīvaka, why are you silent?”\n“Sire, the Blessed One, the perfected one, the fully awakened Buddha is staying in my mango grove together with a large Saṅgha of 1,250 mendicants.\nHe has this good reputation:\n‘That Blessed One is perfected, a fully awakened Buddha, accomplished in knowledge and conduct, holy, knower of the world, supreme guide for t",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "insight",
+      "suffering_tags": []
+    },
+    {
+      "id": "dn22",
+      "nikaya": "dn",
+      "collection": "DN 22",
+      "title_en": "The Great Discourse on Mindfulness",
+      "title_ko": "대념처경",
+      "source_ref": "DN 22",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dn22/ko",
+      "passages": [
+        {
+          "lang": "en",
+          "text": "Long Discourses 22\nThe Longer Discourse on Mindfulness Meditation\nSo I have heard.\nAt one time the Buddha was staying in the land of the Kurus, near the Kuru town named Kammāsadamma.\nThere the Buddha addressed the mendicants,\n“Mendicants!”\n“Venerable sir,” they replied.\nThe Buddha said this:\n“Mendicants, the four kinds of mindfulness meditation are the path to convergence. They are in order to purify sentient beings, to get past sorrow and crying, to make an end of pain and sadness, to discover the system, and to realize extinguishment.\nWhat four?\nIt’s when a mendicant meditates by observing an aspect of the body—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of feelings—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of the mind—keen, aware, and mindful, rid of covetousness and displeasure for the world.\nThey meditate observing an aspect of principles—keen, aware, and mindful, rid of covetousness and displeasure for the world.\n1. Observing the Body\n1.1. Mindfulness of Breathing\nAnd how does a mendicant meditate observing an aspect of the body?\nIt’s when a mendicant—gone to a wilderness, or to the root of a tree, or to an empty hut—sits down cross-legged, sets their body straight, and brings mindfulness to the present.\nJust mindful, they breathe in. Mindful, they breathe out.\nBreathing in heavily they know: ‘I’m breathing in heavily.’ Breathing out heavily they know: ‘I’m breathing out heavily.’\nWhen breathing in lightly they know: ‘I’m breathing in lightly.’ Breathing out lightly they know: ‘I’m breathing out lightly.’\nThey practice like this: ‘I’ll breathe in experiencing the whole body.’ They practice like this: ‘I’ll breathe out experiencing the whole body.’\nThey practice like this: ‘I’ll breathe in stilling the physical process.’ They practice like this: ‘I’ll breathe out stilling the physical process.’\nIt’s like a deft carpenter or carpenter’s apprentice. When making a deep cut they know: ‘I’m making a deep cut,’ and when making a shallow cut they know: ‘I’m making a shallow cut.’\nAnd so they meditate observing an aspect of the body internally, externally, and both internally and externally.\nWith respect to the body, they meditate observing the liability to originate, to vanish, and to originate and vanish.\nOr mindfulness is established that the body exists, to the extent necessary for knowledge and mindfulness. They meditate independent, not grasping at anything in the world.\nThat’s how a mendicant meditates by observing an aspect of the body.\n1.2. The Postures\nFurthermore, when a mendicant is walking they know: ‘I am walking.’ When standing they know: ‘I am standing.’ When sitting they know: ‘I am sitting.’ And when lying down they know: ‘I am lying down.’\nWhatever posture their body is in, they know it.\nAnd so they meditate observing an aspect of the body internally, externally, and both internally and externally.\nThey meditate observing , with respect to the body, the liability to originate, to vanish, and to originate and vanish.\nOr mindfulness is established that the body exists, to the extent necessary for knowledge and mindfulness. They meditate independent, not grasping at anything in the world.\nThat too is how a mendicant meditates by observing an aspect of the body.\n1.3. Situational Awareness\nFurthermore, a mendicant acts with situational awareness when going out and coming back; when looking ahead and aside; when bending and extending the limbs; when bearing the outer robe, bowl, and robes; when eating, drinking, chewing, and tasting; when urinating and defecating; when walking, standing, sitting, sleeping, waking, speaking, and keeping silent.\nAnd so they meditate observing an aspect of the body internally …\nThat too is how a mendicant meditates by observing an aspect of the body.\n1.4. Focusing on the Repulsive\nFurthermore, a mendicant examines their own body, up from the soles of th",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "layer": "practice",
+      "suffering_tags": []
+    },
+    {
+      "id": "sn15.3",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야",
+      "title_en": "Heap of Bones",
+      "title_ko": "뼈더미 경",
+      "source_ref": "SN 15.3",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "suffering_tags": [
+        "사고"
+      ],
+      "url": "https://suttacentral.net/sn15.3/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이 윤회는 시작이 알려지지 않는다. 무명에 가로막히고 갈애에 묶인 중생들이 윤회하며 유전하는 그 시작점은 알려지지 않는다.\n\n비구들이여, 한 사람이 이 겁이 다하도록 돌아다니며 쌓아놓은 뼈를 모은다면, 그 뼈더미는 이 웨뿔라 산만큼 클 것이다 — 그것이 부서지지 않았다면, 뼈가 오래가더라면.\n\n비구들이여, 이 윤회는 길고도 길다. 오랫동안 고통을 겪으며, 슬픔을 겪으며, 재앙을 겪어왔다. 묘지는 넘쳐났다. 비구들이여, 이 정도면 모든 형성된 것에 환멸을 느끼기에 충분하다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, transmigration has no known beginning. No first point is found of sentient beings roaming and transmigrating, hindered by ignorance and fettered by craving.\n\nSuppose someone were to collect the bones of a single person from one eon, without any being lost. The pile of bones would be as tall as this Mount Vepulla — if only the bones were not perishable and did not decay.\n\nTransmigration is long-lasting. Suffering has been accumulated. Graves have been piling up. This is enough to become disillusioned with all formations.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "mn21",
+      "layer": "insight",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야",
+      "title_en": "The Simile of the Saw",
+      "title_ko": "톱 비유 경",
+      "source_ref": "MN 21",
+      "truth_tags": [
+        "멸",
+        "도"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ],
+      "url": "https://suttacentral.net/mn21/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 설령 강도들이 양날의 톱으로 여러분의 사지를 하나씩 잘라낸다 해도, 그로 인해 마음에 악의를 품는 자는 나의 가르침을 따르지 않는 것이다.\n\n비구들이여, 그런 상황에서도 여러분은 이렇게 수련해야 한다. '나의 마음은 변하지 않을 것이다. 나쁜 말을 내뱉지 않을 것이다. 나는 친절하고 자비로운 마음으로 머물 것이다 — 악의 없이, 미움 없이.'\n\n비구들이여, 이 가르침을 기억하라 — 톱의 비유를. 이 비유는 여러분에게 오래도록 이익이 되고 행복이 될 것이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Even if bandits were to carve you up savagely, limb by limb, with a two-handled saw, even then, whoever of you lets his heart get angered even at that, is not doing my bidding.\n\nYou should train yourselves: 'Our minds will be unaffected and we will say no evil words. We will remain sympathetic, with a mind of good will, and with no inner hate.'\n\nYou should remember this teaching of the saw. It will be for your long-term benefit and happiness.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "mn143",
+      "layer": "empathy",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야",
+      "title_en": "Advice to Anāthapiṇḍika",
+      "title_ko": "아나타핀디까 교화 경",
+      "source_ref": "MN 143",
+      "truth_tags": [
+        "고",
+        "멸"
+      ],
+      "poison_tags": [
+        "탐",
+        "치"
+      ],
+      "suffering_tags": [
+        "병고",
+        "사고"
+      ],
+      "url": "https://suttacentral.net/mn143/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "그때 사리뿟따 존자는 아나타핀디까 장자가 병에 걸려 심한 고통을 받고 있다는 소식을 들었다.\n\n사리뿟따 존자가 말했다. '장자여, 이렇게 수련하십시오. 나는 눈에 집착하지 않겠다. 나의 의식이 눈에 의존하지 않겠다. 나는 귀에, 코에, 혀에, 몸에, 마음에 집착하지 않겠다.'\n\n이 말을 듣고 아나타핀디까 장자는 눈물을 흘렸다. 아난다 존자가 물었다. '장자여, 혹시 쓰러지는 것입니까?' '아닙니다, 존자여. 저는 세존과 훌륭한 수행승들께 오랫동안 공양을 올렸지만, 이와 같이 깊은 법문은 들은 적이 없습니다.'",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "On that occasion, Sāriputta heard that Anāthapiṇḍika the householder was ill, suffering, and gravely sick.\n\nSāriputta said: 'Householder, you should train yourself: I will not cling to the eye, and my consciousness will not be dependent on the eye. I will not cling to the ear, nose, tongue, body, or mind.'\n\nWhen this was said, Anāthapiṇḍika the householder wept. Ānanda asked: 'Are you faltering, householder?' 'No, Venerable Sir. But I have long attended on the Blessed One and the noble monks, yet I have never before heard such a profound teaching as this.'",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "ud5.1",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "우다나",
+      "title_en": "From the Beloved",
+      "title_ko": "사랑하는 것으로부터 경",
+      "source_ref": "Ud 5.1",
+      "truth_tags": [
+        "고",
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "suffering_tags": [
+        "애별리고"
+      ],
+      "url": "https://suttacentral.net/ud5.1/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "사랑하는 것에서 슬픔이 생기고,\n사랑하는 것에서 두려움이 생긴다.\n사랑하는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?\n\n좋아하는 것에서 슬픔이 생기고,\n좋아하는 것에서 두려움이 생긴다.\n좋아하는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?\n\n즐기는 것에서 슬픔이 생기고,\n즐기는 것에서 두려움이 생긴다.\n즐기는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "From the dear arises grief,\nfrom the dear arises fear.\nFor one freed from the dear,\nthere is no grief — so how fear?\n\nFrom the cherished arises grief,\nfrom the cherished arises fear.\nFor one freed from the cherished,\nthere is no grief — so how fear?\n\nFrom delight arises grief,\nfrom delight arises fear.\nFor one freed from delight,\nthere is no grief — so how fear?",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "thag16.1",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "장로게 (Theragāthā)",
+      "title_en": "Adhimutta's Verses",
+      "title_ko": "아디묻따 장로 게송",
+      "source_ref": "Thag 16.1",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "suffering_tags": [
+        "사고",
+        "애별리고"
+      ],
+      "url": "https://suttacentral.net/thag16.1/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "삶에 집착이 없는 자에게는\n죽음에 대한 두려움이 없다.\n무거운 짐을 내려놓은 사람처럼\n오히려 편안하게 쉬는 것과 같다.\n\n잘 닦인 수행자에게\n삶을 더 살고자 하는 욕구가 없다.\n마치 할 일을 마친 자가\n더 이상 서두르지 않는 것처럼.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "For one without attachment to life,\nthere is no fear of death.\nLike a porter who has set down a burden,\none rests at ease.\n\nFor a well-practiced monk,\nthere is no longing to go on living.\nLike a person who has finished the task,\nthere is no more urgency.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    }
+  ]
+}

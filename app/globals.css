@@ -1,0 +1,501 @@
+/* ─── Variables ────────────────────────────────────────────────────────────── */
+
+:root {
+  --bg:         #fdf8f0;
+  --surface:    #fff9f1;
+  --border:     #e8d9c0;
+  --border-dim: #f0e4cc;
+  --text:       #2c1a0e;
+  --muted:      #8c6a46;
+  --accent:     #7d2300;
+  --gold:       #9a7030;
+  --gold-light: #c4943c;
+}
+
+/* ─── Reset ────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Page layout ──────────────────────────────────────────────────────────── */
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 20px 80px;
+  gap: 40px;
+}
+
+/* ─── Site header ──────────────────────────────────────────────────────────── */
+
+.site-header {
+  text-align: center;
+}
+
+.wheel {
+  display: block;
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.site-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.83rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ─── Question form ────────────────────────────────────────────────────────── */
+
+.ask-form {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ask-textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 20px 22px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.75;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.ask-textarea:focus {
+  border-color: var(--gold);
+}
+
+.ask-textarea::placeholder {
+  color: #c4a882;
+  font-style: italic;
+}
+
+.submit-btn {
+  align-self: center;
+  padding: 13px 44px;
+  background: var(--accent);
+  color: #fff9f1;
+  border: none;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #a32d00;
+}
+
+.submit-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.error-msg {
+  color: #b53000;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* ─── Loading ──────────────────────────────────────────────────────────────── */
+
+.loading-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+  animation: fadeIn 0.3s ease both;
+}
+
+.loading-wheel {
+  font-size: 2.4rem;
+  color: var(--gold);
+  display: inline-block;
+  animation: breathe 2.4s ease-in-out infinite;
+}
+
+.loading-text {
+  font-size: 0.95rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 0.45; transform: scale(0.96); }
+  50%       { opacity: 1;    transform: scale(1.04); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1;   }
+}
+
+/* ─── Result page ──────────────────────────────────────────────────────────── */
+
+.result-page {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  animation: fadeIn 0.4s ease both;
+}
+
+.result-card {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ─── Card top ─────────────────────────────────────────────────────────────── */
+
+.card-top {
+  padding: 28px 32px 22px;
+}
+
+.card-super {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+/* ─── Disclosure ────────────────────────────────────────────────────────────── */
+
+.disclosure {
+  border-top: 1px solid var(--border-dim);
+}
+
+.disc-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+
+.disc-btn:hover {
+  color: var(--text);
+  background: rgba(154, 112, 48, 0.04);
+}
+
+.disc-chevron {
+  font-size: 1rem;
+  color: var(--gold);
+  transition: transform 0.25s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+.disc-chevron.open {
+  transform: rotate(180deg);
+}
+
+.disc-body {
+  animation: disclosureIn 0.2s ease-out both;
+}
+
+@keyframes disclosureIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Suffering reveal ─────────────────────────────────────────────────────── */
+
+.suf-reveal {
+  padding: 4px 32px 24px;
+}
+
+.suf-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.suf-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.suf-hanja {
+  font-size: 0.9rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.suf-desc {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.suf-context {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding-left: 12px;
+  line-height: 1.6;
+}
+
+/* ─── Suffering donut ───────────────────────────────────────────────────────── */
+
+.suf-donut {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 8px auto 20px;
+}
+
+/* ─── Card rule ────────────────────────────────────────────────────────────── */
+
+.card-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* ─── Buddha section ────────────────────────────────────────────────────────── */
+
+.insight-section {
+  padding: 28px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insight-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.insight-para {
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.insight-closing {
+  font-size: 0.93rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.7;
+  border-left: 3px solid var(--border);
+  padding-left: 14px;
+}
+
+/* ─── Sutta list ────────────────────────────────────────────────────────────── */
+
+.sutta-list {
+  padding: 4px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sutta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sutta-ref {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+
+.sutta-ref:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+.sutta-quote {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ─── Card footer ───────────────────────────────────────────────────────────── */
+
+.card-foot {
+  border-top: 1px solid var(--border-dim);
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.foot-source {
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.foot-link {
+  font-size: 0.78rem;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: color 0.15s;
+}
+
+.foot-link:hover {
+  color: var(--accent);
+}
+
+/* ─── Feedback ──────────────────────────────────────────────────────────────── */
+
+.feedback-row {
+  display: flex;
+  justify-content: center;
+  padding: 16px 28px 8px;
+}
+
+.feedback-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.65;
+  padding: 4px 0;
+  text-decoration: underline dotted;
+  transition: opacity 0.15s;
+}
+
+.feedback-btn:hover { opacity: 1; }
+.feedback-btn:disabled { cursor: default; opacity: 0.4; }
+
+.feedback-thanks {
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.65;
+}
+
+/* ─── Reset button ──────────────────────────────────────────────────────────── */
+
+.reset-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  padding: 10px 28px;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.reset-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ─── Animations ────────────────────────────────────────────────────────────── */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Mobile ────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .page {
+    padding: 32px 16px 60px;
+    gap: 28px;
+  }
+
+  .card-top,
+  .insight-section,
+  .suf-reveal,
+  .sutta-list,
+  .card-foot {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .disc-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-super {
+    font-size: 0.98rem;
+  }
+
+  .insight-para {
+    font-size: 0.93rem;
+  }
+}

@@ -1,0 +1,808 @@
+{
+  "version": "1.0.0",
+  "license": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Translations sourced from SuttaCentral (suttacentral.net). English translations by Bhikkhu Sujato (CC0). Korean passages from traditional commentary.",
+  "suttas": [
+    {
+      "id": "dhp1-2",
+      "layer": "empathy",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Pairs",
+      "title_ko": "쌍품 (雙品)",
+      "source_ref": "Dhp 1–2",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "마음은 모든 법(法)의 선구자이며,\n마음이 주인이고 마음에서 나온다.\n더럽혀진 마음으로 말하거나 행동하면\n괴로움이 그를 따른다.\n수레바퀴가 소의 발굽을 따르듯이.\n\n마음은 모든 법의 선구자이며,\n마음이 주인이고 마음에서 나온다.\n청정한 마음으로 말하거나 행동하면\n행복이 그를 따른다.\n떠나지 않는 그림자처럼.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mind is the forerunner of all actions.\nAll deeds are led by mind, created by mind.\nIf one speaks or acts with a corrupt mind,\nsuffering follows, as the wheel follows the hoof of an ox.\n\nMind is the forerunner of all actions.\nAll deeds are led by mind, created by mind.\nIf one speaks or acts with a serene mind,\nhappiness follows, as a shadow that never departs.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "dhp5",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Pairs",
+      "title_ko": "쌍품 (雙品)",
+      "source_ref": "Dhp 5",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "미움은 결코 미움으로써 가라앉지 않는다.\n미움이 아닌 것으로만 가라앉는다.\n이것은 영원한 법이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Never is hatred settled by hatred in this world.\nOnly by non-hatred is hatred appeased.\nThis is the ancient rule.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "dhp21",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Heedfulness",
+      "title_ko": "불방일품 (不放逸品)",
+      "source_ref": "Dhp 21",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp21-32/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "방일하지 않음(不放逸)은 불사(不死)의 길이고,\n방일함은 죽음의 길이다.\n방일하지 않는 사람은 죽지 않고,\n방일한 사람은 이미 죽은 것과 같다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Heedfulness is the path to the Deathless;\nheedlessness is the path to death.\nThe heedful do not die;\nthe heedless are as if already dead.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "사고"
+      ]
+    },
+    {
+      "id": "dhp183",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Buddhas",
+      "title_ko": "불품 (佛品)",
+      "source_ref": "Dhp 183",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp179-196/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "어떤 악도 짓지 않고,\n선을 가득 닦으며,\n자신의 마음을 완전히 청정하게 하는 것—\n이것이 모든 부처님의 가르침이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Not to do any evil,\nto cultivate good,\nto purify one's mind—\nthis is the teaching of the Buddhas.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "dhp197-200",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Happiness",
+      "title_ko": "행복품 (幸福品)",
+      "source_ref": "Dhp 197–200",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp197-208/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "아, 참으로 행복하게 살리라, 원한 없는 우리는!\n증오로 가득 찬 인간들 가운데에서\n우리는 원한 없이 살리라.\n\n아, 참으로 행복하게 살리라, 집착 없는 우리는!\n집착으로 가득 찬 인간들 가운데에서\n우리는 집착 없이 살리라.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "How very happily we live,\nwe who have no attachments.\nWe shall feast on joy,\nas do the Gods of Streaming Radiance.\n\nVictory breeds enmity;\nthe defeated dwell in pain.\nThe peaceful dwell in happiness,\nhaving abandoned victory and defeat.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "dhp223",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Anger",
+      "title_ko": "분노품 (忿怒品)",
+      "source_ref": "Dhp 223",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/dhp221-234/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "성냄은 성내지 않음으로 이겨야 하고,\n악은 선으로 이겨야 하며,\n인색함은 보시로 이겨야 하고,\n거짓말쟁이는 진실로 이겨야 한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Conquer anger by non-anger,\nbad by good,\nmiserliness by generosity,\nand the liar by truth.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "dhp276-279",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "The Path",
+      "title_ko": "도품 (道品)",
+      "source_ref": "Dhp 276–279",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/dhp273-289/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "그대들 스스로 정진하라.\n여래는 단지 길을 가르쳐 줄 뿐이다.\n선정에 들어 수행하는 자는\n마라(Māra)의 속박에서 벗어날 것이다.\n\n모든 형성된 것은 무상하다—고(苦)다.\n이것을 통찰로 보게 될 때\n괴로움에서 멀어진다.\n이것이 청정에 이르는 길이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "You yourselves must strive;\nthe Buddhas only show the way.\nThose who have entered the path and who meditate\nare released from the bonds of Māra.\n\n'All conditioned things are impermanent'—\nwhen one sees this with wisdom,\none turns away from suffering.\nThis is the path to purification.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn56.11",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "Setting the Wheel of the Dhamma in Motion",
+      "title_ko": "전법륜경 (轉法輪經)",
+      "source_ref": "SN 56.11",
+      "truth_tags": [
+        "고",
+        "집",
+        "멸",
+        "도"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn56.11/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이제 고(苦)의 성스러운 진리는 이것이다.\n태어남이 고통이요, 늙음이 고통이요, 병이 고통이요, 죽음이 고통이다.\n슬픔·비탄·고통·근심·절망이 고통이다.\n좋아하지 않는 것과 함께하는 것이 고통이요,\n좋아하는 것과 헤어지는 것이 고통이요,\n원하는 것을 얻지 못하는 것이 고통이다.\n요컨대 다섯 가지 취착의 무더기(五取蘊)가 고통이다.\n\n비구들이여, 이제 고의 원인(集)의 성스러운 진리는 이것이다.\n그것은 재생을 거듭하게 하며 환희와 탐욕을 수반하고,\n여기저기서 즐거움을 찾는 갈애(渴愛)이니,\n곧 감각적 욕망에 대한 갈애, 존재에 대한 갈애, 소멸에 대한 갈애이다.\n\n비구들이여, 이제 고의 소멸(滅)의 성스러운 진리는 이것이다.\n그 갈애를 완전히 사라지게 하고 소멸시키며,\n버리고 포기하고 해방되어 집착하지 않는 것이다.\n\n비구들이여, 이제 고의 소멸에 이르는 길(道)의 성스러운 진리는 이것이다.\n바로 이 성스러운 팔정도(八正道)이니—\n정견(正見)·정사유(正思惟)·정어(正語)·정업(正業)·정명(正命)·정정진(正精進)·정념(正念)·정정(正定)이다.",
+          "attribution": "각묵 스님 역 (빠알리성전협회)"
+        },
+        {
+          "lang": "en",
+          "text": "Now this, mendicants, is the noble truth of suffering:\nbirth is suffering, aging is suffering, illness is suffering, death is suffering;\nsorrow, lamentation, pain, sadness, and distress are suffering;\nassociation with the unloved is suffering;\nseparation from the loved is suffering;\nnot getting what you wish for is suffering.\nIn brief, the five grasping aggregates are suffering.\n\nNow this is the noble truth of the origin of suffering:\nit is the craving that leads to rebirth, co-arises with relishing and greed,\nand seeks pleasure here and there;\nthat is, craving for sensual pleasure, craving for continued existence, craving for extermination.\n\nNow this is the noble truth of the cessation of suffering:\nit is the complete fading away and cessation of that same craving,\ngiving it up, relinquishing it, releasing it, and letting it go.\n\nNow this is the noble truth of the practice that leads to the cessation of suffering:\nit is this noble eightfold path—\nright view, right intention, right speech, right action, right livelihood, right effort, right mindfulness, right immersion.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "sn35.28",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The Fire Sermon",
+      "title_ko": "불의 경 (Ādittapariyāya Sutta)",
+      "source_ref": "SN 35.28",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn35.28/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 모든 것이 불타고 있다.\n무엇이 불타고 있는가?\n눈이 불타고 있고, 눈에 보이는 것들이 불타고 있고,\n눈의 알음알이가 불타고 있고, 눈의 접촉이 불타고 있다.\n눈의 접촉을 조건으로 생겨나는—즐거움이든, 괴로움이든,\n즐겁지도 괴롭지도 않은 것이든—그 모든 느낌도 불타고 있다.\n\n무엇으로 불타고 있는가?\n탐욕의 불로 불타고 있고,\n성냄의 불로 불타고 있고,\n어리석음의 불로 불타고 있다.\n태어남으로, 늙음으로, 죽음으로,\n슬픔·비탄·고통·근심·절망으로 불타고 있다고 나는 말한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, all is burning.\nAnd what is the all that is burning?\nThe eye is burning, forms are burning, eye-consciousness is burning,\neye-contact is burning, and whatever is felt as pleasant, painful,\nor neither-painful-nor-pleasant that arises with eye-contact as condition—\nthat too is burning.\n\nBurning with what?\nBurning with the fire of greed,\nburning with the fire of hatred,\nburning with the fire of delusion.\nBurning with birth, aging, and death,\nwith sorrow, lamentation, pain, sadness, and distress, I say.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn12.2",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "Dependent Origination",
+      "title_ko": "연기경 (緣起經)",
+      "source_ref": "SN 12.2",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn12.2/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "무엇이 연기(緣起)인가?\n\n무명(無明)을 조건으로 행(行)이,\n행을 조건으로 식(識)이,\n식을 조건으로 명색(名色)이,\n명색을 조건으로 육입(六入)이,\n육입을 조건으로 촉(觸)이,\n촉을 조건으로 수(受)가,\n수를 조건으로 애(愛)가,\n애를 조건으로 취(取)가,\n취를 조건으로 유(有)가,\n유를 조건으로 생(生)이,\n생을 조건으로 노사(老死)·슬픔·비탄·고통·근심·절망이 발생한다.\n\n이와 같이 이 전체 고통의 집합이 발생한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "And what is dependent origination?\n\nWith ignorance as condition, formations come to be;\nwith formations as condition, consciousness;\nwith consciousness as condition, name-and-form;\nwith name-and-form as condition, the six sense bases;\nwith the six sense bases as condition, contact;\nwith contact as condition, feeling;\nwith feeling as condition, craving;\nwith craving as condition, clinging;\nwith clinging as condition, existence;\nwith existence as condition, birth;\nwith birth as condition, aging-and-death, sorrow, lamentation,\npain, sadness, and distress come to be.\n\nSuch is the origin of this whole mass of suffering.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn22.59",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The Characteristic of Non-Self",
+      "title_ko": "무아상경 (無我相經)",
+      "source_ref": "SN 22.59",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/sn22.59/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 형상(色)은 자아(自我)가 아니다.\n만약 형상이 자아라면,\n형상이 고통으로 이끌지 않을 것이고,\n'내 형상은 이렇게 되어라,\n내 형상은 이렇게 되지 말아라'라고 말할 수 있을 것이다.\n\n그러나 형상은 자아가 아니기 때문에\n형상은 고통으로 이끌며,\n형상에 대해 '이렇게 되어라, 이렇게 되지 말아라'라고\n말할 수 없다.\n\n이와 같이 이 모든 것—형상·느낌(受)·지각(想)·의도적 형성(行)·알음알이(識)—\n이것들을 있는 그대로 바른 통찰지로 보아야 한다:\n'이것은 내 것이 아니고, 이것은 내가 아니며, 이것은 나의 자아가 아니다.'",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, form is not self.\nIf form were self, then form would not lead to affliction,\nand you could have it of form:\n'Let my form be like this; let my form not be like that.'\nBut because form is not self,\nform leads to affliction,\nand none can have it of form:\n'Let my form be like this; let my form not be like that.'\n\nSo you should truly see any kind of form at all—\npast, future, or present; internal or external;\ngross or subtle; inferior or superior; far or near—\nas: 'This is not mine, I am not this, this is not my self.'",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn1.20",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "The World is Swept Away",
+      "title_ko": "세상은 흘러가다",
+      "source_ref": "SN 1.20",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/sn1.20/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "세상은 흘러가 버린다.\n세상은 영원하지 않다.\n세상에는 은신처가 없으니\n세상에는 주인이 없다.\n\n세상에는 소유물이 없으니\n집착 없이 가야 한다.\n죽음을 겪는 인간에게\n내려놓음이 필요하니,\n이것이 현자가 존재를 보는 방식이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "The world is swept away, it does not endure;\nthe world offers no shelter, there is no one in charge.\nThe world has nothing of its own;\none has to pass on, leaving everything behind.\n\nThe world is incomplete; it is insatiate, a slave to craving.\nThe wise see things as they are—\nthis is the vision of reality.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "an3.65",
+      "layer": "practice",
+      "nikaya": "an",
+      "collection": "앙굿따라 니까야 (Aṅguttara Nikāya)",
+      "title_en": "The Kālāma Sutta — To the Kālāmas",
+      "title_ko": "갈라마경 (Kālāma Sutta)",
+      "source_ref": "AN 3.65",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/an3.65/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "갈라마들이여, 다음을 이유로 받아들이지 마십시오:\n구전으로 전해졌기 때문에,\n전통에 속하기 때문에,\n많이 들었기 때문에,\n경전에 있기 때문에,\n이론적으로 맞기 때문에,\n추론의 근거가 있기 때문에,\n이유가 그럴싸하기 때문에,\n견해를 검토한 후에 동의하기 때문에,\n그 사람이 능숙해 보이기 때문에,\n또는 '이 사문은 나의 스승이기 때문에'라는 이유로.\n\n갈라마들이여, 여러분이 스스로 '이것들은 불건전하고,\n이것들은 비난받을 만하며,\n현명한 이들이 이것을 꾸짖고,\n이것을 받아들여 행하면 해롭고 고통스럽다'라고 알 때,\n그것들을 버려야 합니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Come, Kālāmas, don't go by oral tradition, by lineage of teaching,\nby hearsay, by a collection of texts,\nby logic, by inferential reasoning, by reasoned cogitation,\nby the acceptance of a view after pondering it,\nby the seeming competence of a speaker,\nor by the thought 'This ascetic is our teacher.'\n\nWhen you know for yourselves:\n'These things are unwholesome, blameworthy,\ncensured by the wise;\nundertaken and practiced, these things lead to harm and suffering'—\nthen you should abandon them.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "mn10-satipatthana",
+      "layer": "practice",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "Mindfulness Meditation — The Foundations of Mindfulness",
+      "title_ko": "사념처경 (四念處經)",
+      "source_ref": "MN 10",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "고"
+      ],
+      "url": "https://suttacentral.net/mn10/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이 하나의 길이 있습니다.\n중생들의 청정을 위하여,\n슬픔과 비탄을 뛰어넘기 위하여,\n고통과 근심을 사라지게 하기 위하여,\n올바른 방법을 성취하기 위하여,\n열반을 실현하기 위하여—\n그것은 바로 사념처(四念處)입니다.\n\n무엇이 넷인가?\n비구는 몸(身)에서 몸을 관찰하며 머문다.\n느낌(受)에서 느낌을 관찰하며 머문다.\n마음(心)에서 마음을 관찰하며 머문다.\n법(法)에서 법을 관찰하며 머문다—\n열렬하고, 분명하게 알아차리고, 마음챙기면서,\n세상에 대한 탐욕과 싫어함을 제어하면서.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, there is one path for the purification of beings,\nfor the passing beyond sorrow and lamentation,\nfor the ending of pain and sadness,\nfor reaching the right method, and for realizing Nibbāna—\nand that is the four kinds of mindfulness meditation.\n\nWhat are the four? A mendicant meditates\ncontemplating the body in the body—\nardent, aware, and mindful,\nafter removing covetousness and displeasure with respect to the world.\nThey contemplate feelings in feelings,\nthe mind in the mind, and phenomena in phenomena—\nardent, aware, and mindful.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "mn22-snake",
+      "layer": "insight",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "The Simile of the Snake",
+      "title_ko": "뱀의 비유 (Alagaddūpama Sutta)",
+      "source_ref": "MN 22",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn22/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 내 가르침은 뗏목(筏)에 비유할 수 있습니다.\n건너기 위한 것이지, 들고 다니기 위한 것이 아닙니다.\n\n비구들이여, 뗏목의 비유를 이해한 사람은\n법도 버려야 합니다,\n하물며 법 아닌 것은 두말할 것도 없이.\n\n비구들이여, '나는 이것이 없다, 이것은 내 것이 아니다'\n이렇게 관찰할 때, 그는 세상에서\n아무것도 집착하지 않게 됩니다.\n집착하지 않으면 불안해하지 않습니다.\n불안해하지 않으면 스스로 완전한 열반에 듭니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, I teach the Dhamma compared to a raft,\nfor the purpose of crossing over, not for the purpose of holding onto.\nUnderstanding the Dhamma as taught compared to a raft,\nyou should let go of even the Dhamma,\nto say nothing of non-Dhamma.\n\nWhen one observes of all things:\n'This is not mine, this I am not, this is not my self,'—\nthen one does not cling to anything in the world.\nNot clinging, one is not anxious.\nNot being anxious, one personally attains Nibbāna.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn3.3",
+      "layer": "empathy",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야 (Saṃyutta Nikāya)",
+      "title_en": "A Lot of Help",
+      "title_ko": "왕에게 가르친 분노",
+      "source_ref": "SN 3.3",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/sn3.3/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "왕이여, 분노가 일어날 때,\n몸과 말과 마음에 상처를 입히는 것을\n부끄러이 여기는 사람들은 행복을 얻습니다.\n\n분노가 일어날 때 부끄러움이\n고삐처럼 당겨줍니다.\n화가 치솟을 때 분노를 다스리는 자는\n마치 전차를 제어하는 마부와 같습니다.\n나는 그를 진정한 마부라 부르고,\n고삐만 쥐고 있는 자는 단지 끌려가는 사람일 뿐입니다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "When anger arises, those ashamed of it\nfind happiness in body, speech, and mind.\n\nWhen anger arises, a sense of shame\npulls one back like a rein.\nWhoever controls their anger when it surges\nis like a charioteer who controls a swift vehicle.\nI call them a charioteer;\nothers merely hold the reins.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "병고"
+      ]
+    },
+    {
+      "id": "mn2-taints",
+      "layer": "practice",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야 (Majjhima Nikāya)",
+      "title_en": "All the Taints",
+      "title_ko": "일체루경 (一切漏經)",
+      "source_ref": "MN 2",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "url": "https://suttacentral.net/mn2/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "무지한 범부는\n'나는 과거에 존재했는가, 아니었는가?\n미래에 나는 존재할 것인가, 아닐 것인가?\n나는 지금 무엇인가? 어떻게 이렇게 있는가?'라고 생각하며\n내면으로 숙고하거나 또는 이런 생각을 낸다:\n'나는 자아가 있는가?'\n\n지혜로운 성스러운 제자들은\n이런 것들을 현명하게 숙고한다:\n'이것은 무상하다. 이것은 고통이다.\n이것은 자아가 아니다.'\n이렇게 봄으로써 그는 감각적 쾌락의 번뇌에서,\n존재의 번뇌에서, 무지의 번뇌에서 해방된다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "An unlearned ordinary person does not understand\nwhat things are fit for attention and what things are not.\nNot attending to things fit for attention,\nattending to things unfit for attention,\nthe taints that have not arisen arise,\nand the taints that have arisen increase.\n\nA learned noble disciple understands\nwhat is fit for attention and what is not.\nAttending to things fit for attention,\nnot attending to things unfit for attention,\nthe taints that have not arisen do not arise,\nand the taints that have arisen are abandoned.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "snp1.8-metta",
+      "layer": "practice",
+      "nikaya": "kn",
+      "collection": "숫따니빠따 (Sutta Nipāta)",
+      "title_en": "Loving-Kindness",
+      "title_ko": "자비경 (慈悲經, Metta Sutta)",
+      "source_ref": "Snp 1.8",
+      "truth_tags": [
+        "도"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "url": "https://suttacentral.net/snp1.8/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "자신에게 이익이 될 것을 깨달아\n고요의 경지에 능숙한 사람이라면\n유능하고 정직하며 단정하고\n말이 부드럽고 온화하며 교만하지 않아야 한다.\n\n모든 살아 있는 것들이 행복하기를,\n안온하기를, 마음이 편안하기를!\n\n어떤 살아 있는 존재든—\n약하거나 강하거나, 길거나 짧거나,\n크거나 작거나, 보이거나 보이지 않거나,\n가까이 있거나 멀리 있거나, 이미 태어났거나 태어날—\n모든 존재들이 행복하기를!\n\n어머니가 자신의 외아들을\n목숨 바쳐 지키듯이,\n그와 같이 모든 살아있는 것들에 대해\n한량없는 마음을 닦아야 한다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Whatever living beings there may be,\nwithout exception, whether they are weak or strong,\nlong or large, medium, short, small, or fat,\nseen or unseen, those who live near and those who live far,\nthose who are born and those who are to be born—\nmay all beings without exception be happy!\n\nJust as a mother would protect with her own life\nher own son, her only son,\nso too you should cultivate\na heart of measureless love toward all beings.\n\nYou should cultivate this mindfulness—\nthis is what is said to be a meditative state of holy living here.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ]
+    },
+    {
+      "id": "an4.36-lobha",
+      "layer": "insight",
+      "nikaya": "an",
+      "collection": "앙굿따라 니까야 (Aṅguttara Nikāya)",
+      "title_en": "On Greed, Hatred, and Delusion",
+      "title_ko": "탐욕·성냄·어리석음에 대하여",
+      "source_ref": "AN 3.69",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/an3.69/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "탐욕은 악이며, 탐욕 없음도 악을 낳지 않는다.\n성냄은 악이며, 성냄 없음도 악을 낳지 않는다.\n어리석음은 악이며, 어리석음 없음도 악을 낳지 않는다.\n\n탐욕으로 정복된 마음과 지력(智力)을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n성냄으로 정복된 마음과 지력을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n어리석음으로 정복된 마음과 지력을 가진 인간은\n다른 사람에게 고통을 주는 것을 생각한다.\n\n탐욕의 불이 꺼지면 고통도 사라진다.\n성냄의 불이 꺼지면 고통도 사라진다.\n어리석음의 불이 꺼지면 고통도 사라진다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Greed is a cause of evil; non-greed is a cause of non-evil.\nHatred is a cause of evil; non-hatred is a cause of non-evil.\nDelusion is a cause of evil; non-delusion is a cause of non-evil.\n\nA person overcome by greed, their mind and intellect overpowered,\nthinks of their own harm, another's harm, or both.\nA person overcome by hatred... a person overcome by delusion,\ntheir mind and intellect overpowered,\nthinks of their own harm, another's harm, or both.\n\nWhen the fires of greed are extinguished, suffering ceases.\nWhen hatred ceases, suffering ceases.\nWhen delusion ceases, suffering ceases.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "오온성고"
+      ]
+    },
+    {
+      "id": "dhp338-345",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "법구경 (Dhammapada)",
+      "title_en": "Craving",
+      "title_ko": "갈애품 (渴愛品)",
+      "source_ref": "Dhp 338–340",
+      "truth_tags": [
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "url": "https://suttacentral.net/dhp334-359/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "뿌리가 다치지 않고 튼튼하면\n나무는 잘라져도 다시 자란다.\n이와 같이 갈애가 완전히 뽑히지 않으면\n고통이 거듭거듭 생겨난다.\n\n서른여섯 개의 탁류가 즐거운 것을 향해 흐르니\n강한 갈망의 흐름이 사견(邪見)에 빠진 자를 앗아간다.\n탁류는 사방으로 흐르고 넝쿨 식물은 땅을 뻗어 나간다.\n그 넝쿨을 보면 현명한 자여, 뿌리를 끊어라.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Just as a tree with roots unharmed and strong\ngrows back even when cut down,\nso too, when underlying craving is not uprooted,\nsuffering springs up again and again.\n\nFor one who has thirty-six streams of craving\nrushing toward pleasurable things,\nthe flood of thoughts based on desire\ncarries them away.\nThe streams flow everywhere, the creeper sprouts and grows;\nseeing the sprouting creeper, cut the root with wisdom.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": [
+        "애별리고"
+      ]
+    },
+    {
+      "id": "ud8.1-nibbana",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "우다나 (Udāna)",
+      "title_en": "Nibbāna — The Unborn",
+      "title_ko": "열반 — 생겨나지 않은 것",
+      "source_ref": "Ud 8.1–3",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "탐",
+        "진",
+        "치"
+      ],
+      "url": "https://suttacentral.net/ud8.1/en/sujato",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 태어나지 않은 것이 있고,\n생겨나지 않은 것이 있고,\n만들어지지 않은 것이 있고,\n형성되지 않은 것이 있다.\n\n비구들이여, 태어나지 않은 것,\n생겨나지 않은 것,\n만들어지지 않은 것,\n형성되지 않은 것이 없다면,\n태어난 것·생겨난 것·만들어진 것·형성된 것에서\n벗어남이 없을 것이다.\n\n그러나 태어나지 않은 것,\n생겨나지 않은 것,\n만들어지지 않은 것,\n형성되지 않은 것이 있기 때문에,\n태어난 것·생겨난 것·만들어진 것·형성된 것에서\n벗어남이 있다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, there is an unborn, unbecome, unmade, unconditioned.\nIf there were no unborn, unbecome, unmade, unconditioned,\nthere would be no escape from the born, become, made, conditioned.\n\nBut because there is an unborn, unbecome, unmade, unconditioned,\nthere is an escape from the born, become, made, conditioned.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ],
+      "suffering_tags": []
+    },
+    {
+      "id": "sn15.3",
+      "layer": "insight",
+      "nikaya": "sn",
+      "collection": "상윳따 니까야",
+      "title_en": "Heap of Bones",
+      "title_ko": "뼈더미 경",
+      "source_ref": "SN 15.3",
+      "truth_tags": [
+        "고"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "suffering_tags": [
+        "사고"
+      ],
+      "url": "https://suttacentral.net/sn15.3/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 이 윤회는 시작이 알려지지 않는다. 무명에 가로막히고 갈애에 묶인 중생들이 윤회하며 유전하는 그 시작점은 알려지지 않는다.\n\n비구들이여, 한 사람이 이 겁이 다하도록 돌아다니며 쌓아놓은 뼈를 모은다면, 그 뼈더미는 이 웨뿔라 산만큼 클 것이다 — 그것이 부서지지 않았다면, 뼈가 오래가더라면.\n\n비구들이여, 이 윤회는 길고도 길다. 오랫동안 고통을 겪으며, 슬픔을 겪으며, 재앙을 겪어왔다. 묘지는 넘쳐났다. 비구들이여, 이 정도면 모든 형성된 것에 환멸을 느끼기에 충분하다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Mendicants, transmigration has no known beginning. No first point is found of sentient beings roaming and transmigrating, hindered by ignorance and fettered by craving.\n\nSuppose someone were to collect the bones of a single person from one eon, without any being lost. The pile of bones would be as tall as this Mount Vepulla — if only the bones were not perishable and did not decay.\n\nTransmigration is long-lasting. Suffering has been accumulated. Graves have been piling up. This is enough to become disillusioned with all formations.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "mn21",
+      "layer": "insight",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야",
+      "title_en": "The Simile of the Saw",
+      "title_ko": "톱 비유 경",
+      "source_ref": "MN 21",
+      "truth_tags": [
+        "멸",
+        "도"
+      ],
+      "poison_tags": [
+        "진"
+      ],
+      "suffering_tags": [
+        "원증회고"
+      ],
+      "url": "https://suttacentral.net/mn21/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "비구들이여, 설령 강도들이 양날의 톱으로 여러분의 사지를 하나씩 잘라낸다 해도, 그로 인해 마음에 악의를 품는 자는 나의 가르침을 따르지 않는 것이다.\n\n비구들이여, 그런 상황에서도 여러분은 이렇게 수련해야 한다. '나의 마음은 변하지 않을 것이다. 나쁜 말을 내뱉지 않을 것이다. 나는 친절하고 자비로운 마음으로 머물 것이다 — 악의 없이, 미움 없이.'\n\n비구들이여, 이 가르침을 기억하라 — 톱의 비유를. 이 비유는 여러분에게 오래도록 이익이 되고 행복이 될 것이다.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "Even if bandits were to carve you up savagely, limb by limb, with a two-handled saw, even then, whoever of you lets his heart get angered even at that, is not doing my bidding.\n\nYou should train yourselves: 'Our minds will be unaffected and we will say no evil words. We will remain sympathetic, with a mind of good will, and with no inner hate.'\n\nYou should remember this teaching of the saw. It will be for your long-term benefit and happiness.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "mn143",
+      "layer": "empathy",
+      "nikaya": "mn",
+      "collection": "맛지마 니까야",
+      "title_en": "Advice to Anāthapiṇḍika",
+      "title_ko": "아나타핀디까 교화 경",
+      "source_ref": "MN 143",
+      "truth_tags": [
+        "고",
+        "멸"
+      ],
+      "poison_tags": [
+        "탐",
+        "치"
+      ],
+      "suffering_tags": [
+        "병고",
+        "사고"
+      ],
+      "url": "https://suttacentral.net/mn143/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "그때 사리뿟따 존자는 아나타핀디까 장자가 병에 걸려 심한 고통을 받고 있다는 소식을 들었다.\n\n사리뿟따 존자가 말했다. '장자여, 이렇게 수련하십시오. 나는 눈에 집착하지 않겠다. 나의 의식이 눈에 의존하지 않겠다. 나는 귀에, 코에, 혀에, 몸에, 마음에 집착하지 않겠다.'\n\n이 말을 듣고 아나타핀디까 장자는 눈물을 흘렸다. 아난다 존자가 물었다. '장자여, 혹시 쓰러지는 것입니까?' '아닙니다, 존자여. 저는 세존과 훌륭한 수행승들께 오랫동안 공양을 올렸지만, 이와 같이 깊은 법문은 들은 적이 없습니다.'",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "On that occasion, Sāriputta heard that Anāthapiṇḍika the householder was ill, suffering, and gravely sick.\n\nSāriputta said: 'Householder, you should train yourself: I will not cling to the eye, and my consciousness will not be dependent on the eye. I will not cling to the ear, nose, tongue, body, or mind.'\n\nWhen this was said, Anāthapiṇḍika the householder wept. Ānanda asked: 'Are you faltering, householder?' 'No, Venerable Sir. But I have long attended on the Blessed One and the noble monks, yet I have never before heard such a profound teaching as this.'",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "ud5.1",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "우다나",
+      "title_en": "From the Beloved",
+      "title_ko": "사랑하는 것으로부터 경",
+      "source_ref": "Ud 5.1",
+      "truth_tags": [
+        "고",
+        "집"
+      ],
+      "poison_tags": [
+        "탐"
+      ],
+      "suffering_tags": [
+        "애별리고"
+      ],
+      "url": "https://suttacentral.net/ud5.1/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "사랑하는 것에서 슬픔이 생기고,\n사랑하는 것에서 두려움이 생긴다.\n사랑하는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?\n\n좋아하는 것에서 슬픔이 생기고,\n좋아하는 것에서 두려움이 생긴다.\n좋아하는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?\n\n즐기는 것에서 슬픔이 생기고,\n즐기는 것에서 두려움이 생긴다.\n즐기는 것이 없는 자에게는 슬픔이 없는데,\n어디에서 두려움이 생기겠는가?",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "From the dear arises grief,\nfrom the dear arises fear.\nFor one freed from the dear,\nthere is no grief — so how fear?\n\nFrom the cherished arises grief,\nfrom the cherished arises fear.\nFor one freed from the cherished,\nthere is no grief — so how fear?\n\nFrom delight arises grief,\nfrom delight arises fear.\nFor one freed from delight,\nthere is no grief — so how fear?",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    },
+    {
+      "id": "thag16.1",
+      "layer": "insight",
+      "nikaya": "kn",
+      "collection": "장로게 (Theragāthā)",
+      "title_en": "Adhimutta's Verses",
+      "title_ko": "아디묻따 장로 게송",
+      "source_ref": "Thag 16.1",
+      "truth_tags": [
+        "멸"
+      ],
+      "poison_tags": [
+        "치"
+      ],
+      "suffering_tags": [
+        "사고",
+        "애별리고"
+      ],
+      "url": "https://suttacentral.net/thag16.1/ko",
+      "passages": [
+        {
+          "lang": "ko",
+          "text": "삶에 집착이 없는 자에게는\n죽음에 대한 두려움이 없다.\n무거운 짐을 내려놓은 사람처럼\n오히려 편안하게 쉬는 것과 같다.\n\n잘 닦인 수행자에게\n삶을 더 살고자 하는 욕구가 없다.\n마치 할 일을 마친 자가\n더 이상 서두르지 않는 것처럼.",
+          "attribution": "각묵 스님 역"
+        },
+        {
+          "lang": "en",
+          "text": "For one without attachment to life,\nthere is no fear of death.\nLike a porter who has set down a burden,\none rests at ease.\n\nFor a well-practiced monk,\nthere is no longing to go on living.\nLike a person who has finished the task,\nthere is no more urgency.",
+          "attribution": "Bhikkhu Sujato (CC0)"
+        }
+      ]
+    }
+  ]
+}

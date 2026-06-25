@@ -1,0 +1,23 @@
+# Next.js
+.next/
+out/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Generated DB (seed 스크립트로 빌드 시 생성)
+data/suttas.db
+
+# suttas.json은 커밋 (Vercel JSON 폴백용)
+# data/suttas.json  ← 커밋에 포함
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+.cache/
