@@ -21,3 +21,5 @@ data/suttas.db
 .DS_Store
 Thumbs.db
 .cache/
+.vercel
+.env*

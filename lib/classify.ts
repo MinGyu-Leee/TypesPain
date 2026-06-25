@@ -1,74 +1,10 @@
-// Hybrid classifier — keyword-primary for all axes, ML as fallback for ambiguous cases.
-//
-// 팔고: keyword+pattern → score≥2이면 사용, score<2이면 ML ZSC fallback (영어 레이블)
-// 삼독: keyword → 탐/진 감지, 없으면 치 default + ML 보조
-// 사성제: keyword → 도/멸/집 감지, 없으면 고 default + ML override (신뢰도>0.5)
-//
-// nli-deberta-v3-small: 영어 MNLI 학습 모델. 한국어 직접 입력 시 삼독 진(anger) 과대평가
-// 경향 있음. 팔고는 영어 의미 레이블로 ZSC 적용 시 수용 가능한 정확도 확인됨.
+// 팔고·삼독·사성제 키워드+패턴 분류기
+// ML 미사용 — Vercel 50MB 번들 제약 및 cold start 초과로 인해 의도적 선택.
+// 팔고: keyword+pattern → score≥1이면 결과 사용, 없으면 오온성고 기본값
+// 삼독: keyword → 탐/진 감지, 없으면 치 기본값
+// 사성제: keyword → 도/멸/집 감지, 없으면 고 기본값
 
-import path from 'path';
 import type { TruthKey, PoisonKey, TopicKey, SufferingKey, ClassificationResult } from './types';
-
-// ── ML Pipeline singleton ─────────────────────────────────────────────────
-
-type ZSCResult = { labels: string[]; scores: number[] };
-type ZSCPipeline = (text: string, labels: string[], opts?: Record<string, unknown>) => Promise<ZSCResult>;
-
-let _pipelinePromise: Promise<ZSCPipeline> | null = null;
-
-function getPipeline(): Promise<ZSCPipeline> {
-  if (!_pipelinePromise) {
-    _pipelinePromise = (async () => {
-      const { pipeline, env } = await import('@xenova/transformers');
-      env.cacheDir = path.join(process.cwd(), '.cache', 'transformers');
-      env.allowLocalModels = true;
-      return pipeline('zero-shot-classification', 'Xenova/nli-deberta-v3-small') as unknown as ZSCPipeline;
-    })();
-  }
-  return _pipelinePromise;
-}
-
-// ── ML candidate labels (used only when keywords give no signal) ──────────
-
-const POISON_ML: readonly { key: PoisonKey; label: string }[] = [
-  { key: '탐', label: 'craving, desire, jealousy, longing, or clinging to someone or something' },
-  { key: '진', label: 'feeling angry, furious, or resentful; anger that keeps rising up or is hard to control' },
-  { key: '치', label: 'confusion, ignorance, emptiness, not knowing what to do, or feeling lost' },
-] as const;
-
-const TRUTH_ML: readonly { key: TruthKey; label: string }[] = [
-  { key: '고', label: 'expressing or venting current pain, sadness, grief, or suffering' },
-  { key: '집', label: 'asking why this happened or wanting to understand the root cause' },
-  { key: '멸', label: 'wanting to let go, be free, or escape from the suffering' },
-  { key: '도', label: 'asking HOW to cope, seeking a method, technique, or way to practice' },
-] as const;
-
-// 팔고 ML 레이블 — keyword score < 2일 때 ZSC fallback으로 사용
-const SUFFERING_ML: readonly { key: SufferingKey; label: string }[] = [
-  { key: '생고',    label: 'questioning why to live, feeling life is meaningless, not knowing the reason for existence, born into suffering' },
-  { key: '노고',    label: 'suffering from aging, body declining with age, fear of getting old, physical deterioration, feeling old' },
-  { key: '병고',    label: 'physical illness, chronic pain, body hurting, medical condition, not recovering, health problems' },
-  { key: '사고',    label: 'fear of death, grief over someone dying, anxiety about mortality, someone close passing away' },
-  { key: '애별리고', label: 'loneliness from separation, missing people, longing for connection, isolated from loved ones, alone without anyone' },
-  { key: '원증회고', label: 'forced to be with someone you hate, stuck with an unpleasant person, unable to escape a hateful situation or relationship' },
-  { key: '구부득고', label: 'unable to get what you want, lacking money, financial hardship, job failure, frustrated goals, not achieving desires' },
-  { key: '오온성고', label: 'vague undefined mental suffering without a clear cause, low self-esteem, feeling worthless or empty' },
-] as const;
-
-// ── Helper: ZSC output → sorted typed array ───────────────────────────────
-
-function mapResult<K>(
-  res: ZSCResult,
-  candidates: readonly { key: K; label: string }[],
-): { key: K; score: number }[] {
-  return res.labels
-    .map((label, i) => ({
-      key: candidates.find(c => c.label === label)!.key,
-      score: res.scores[i],
-    }))
-    .sort((a, b) => b.score - a.score);
-}
 
 // ── 팔고 — keyword-based ──────────────────────────────────────────────────
 
@@ -586,17 +522,11 @@ function scoreKW<K>(text: string, entries: KWEntry<K>[]): { key: K; score: numbe
 }
 
 // ── 팔고 classifier ───────────────────────────────────────────────────────
-// score >= 2: 키워드+패턴 신뢰. score < 2: ML ZSC로 의미 기반 재분류.
-// ML score >= 0.35이면 ML 결과 사용, 미달이면 키워드 score >= 1 확인, 둘 다 실패 시 오온성고.
 
-async function classifySuffering(
-  text: string,
-  clf: ZSCPipeline,
-): Promise<{ key: SufferingKey; score: number }[]> {
+function classifySuffering(text: string): { key: SufferingKey; score: number }[] {
   const kwScores = scoreKW(text, SUFFERING_KW);
   const patternScores = scorePatterns(text);
 
-  // 키워드 점수 + 패턴 점수 합산
   const combined = new Map<SufferingKey, number>(
     kwScores.map(({ key, score }) => [key, score]),
   );
@@ -608,108 +538,55 @@ async function classifySuffering(
     .map(([key, score]) => ({ key, score }))
     .sort((a, b) => b.score - a.score);
 
-  // 명확한 키워드+패턴 신호 → 그대로 사용
-  if (ranked[0].score >= 2) return ranked;
-
-  // 신호 약함 → ML ZSC로 의미 기반 분류
-  const mlRes = await clf(text, SUFFERING_ML.map(c => c.label));
-  const mlScores = mapResult<SufferingKey>(mlRes, SUFFERING_ML);
-  const mlTop = mlScores[0];
-
-  // ML이 오온성고 외 항목에 충분히 자신 있으면 ML 결과 채택
-  if (mlTop.score >= 0.35 && mlTop.key !== '오온성고') {
-    // 키워드 약한 신호를 ML 점수에 소폭 반영
-    const kwMap = Object.fromEntries(ranked.map(r => [r.key, r.score])) as Record<SufferingKey, number>;
-    return mlScores.map(m => ({
-      key: m.key,
-      score: m.score + (kwMap[m.key] ?? 0) * 0.05,
-    })).sort((a, b) => b.score - a.score);
-  }
-
-  // ML 신뢰도 낮음 → 키워드 score >= 1이라도 있으면 사용
   if (ranked[0].score >= 1) return ranked;
-
-  // 모두 실패 → 오온성고 기본값
   return [{ key: '오온성고', score: 0 }, ...ranked.slice(1)];
 }
 
 // ── 삼독 classifier ───────────────────────────────────────────────────────
 
-async function classifyPoisons(
-  text: string,
-  clf: ZSCPipeline,
-): Promise<{ key: PoisonKey; score: number }[]> {
+function classifyPoisons(text: string): { key: PoisonKey; score: number }[] {
   const kwScores = scoreKW(text, POISON_KW);
-  const topKW = kwScores[0]; // highest among 탐/진
+  const tamRaw = kwScores.find(k => k.key === '탐')?.score ?? 0;
+  const jinRaw = kwScores.find(k => k.key === '진')?.score ?? 0;
 
-  // If any keyword matched → keyword result, supplement with ML for multi-label
-  if (topKW.score > 0) {
-    // Still run ML to detect secondary poisons, but keyword wins primary
-    const mlRes = await clf(text, POISON_ML.map(c => c.label), { multi_label: true });
-    const mlScores = mapResult<PoisonKey>(mlRes, POISON_ML);
-    const mlMap   = Object.fromEntries(mlScores.map(p => [p.key, p.score])) as Record<PoisonKey, number>;
-
-    // Keyword winner gets boosted score; others get ML score
-    const merged: { key: PoisonKey; score: number }[] = [
-      { key: '탐', score: (kwScores.find(k => k.key === '탐')?.score ?? 0) > 0 ? 1.0 : mlMap['탐'] },
-      { key: '진', score: (kwScores.find(k => k.key === '진')?.score ?? 0) > 0 ? 1.0 : mlMap['진'] },
-      { key: '치', score: topKW.key !== '치' ? mlMap['치'] : 0.9 }, // 치 wins if no other KW
-    ];
-    return merged.sort((a, b) => b.score - a.score);
+  if (tamRaw === 0 && jinRaw === 0) {
+    return [{ key: '치', score: 1 }, { key: '탐', score: 0 }, { key: '진', score: 0 }];
   }
 
-  // No keyword match → 치 is primary (confusion/ignorance is the Buddhist default)
-  // Use ML for secondary signal but cap its authority
-  const mlRes = await clf(text, POISON_ML.map(c => c.label), { multi_label: true });
-  const mlScores = mapResult<PoisonKey>(mlRes, POISON_ML);
-  const mlMap   = Object.fromEntries(mlScores.map(p => [p.key, p.score])) as Record<PoisonKey, number>;
-
-  // 치 always wins when no keyword. Others can be secondary if ML is confident.
-  const noKwResult: { key: PoisonKey; score: number }[] = [
-    { key: '치', score: 1.0 },
-    { key: '진', score: mlMap['진'] * 0.6 },
-    { key: '탐', score: mlMap['탐'] * 0.6 },
+  // 탐/진 둘 다 검출되면 상대 비율로 정규화 (primaryPoisons multi-label 0.6 기준 유지)
+  const maxRaw = Math.max(tamRaw, jinRaw);
+  const result: { key: PoisonKey; score: number }[] = [
+    { key: '탐', score: tamRaw / maxRaw },
+    { key: '진', score: jinRaw / maxRaw },
+    { key: '치', score: 0 },
   ];
-  return noKwResult.sort((a, b) => b.score - a.score);
+  return result.sort((a, b) => b.score - a.score);
 }
 
 // ── 사성제 classifier ─────────────────────────────────────────────────────
 
-async function classifyTruths(
-  text: string,
-  clf: ZSCPipeline,
-): Promise<{ key: TruthKey; score: number }[]> {
+function classifyTruths(text: string): { key: TruthKey; score: number }[] {
   const kwScores = scoreKW(text, TRUTH_KW);
-  const topKW    = kwScores[0]; // highest among 도/멸/집
+  const topKW    = kwScores[0];
 
   if (topKW.score > 0) {
-    // Clear keyword signal → keyword wins, no need for ML
-    const kwTruthResult: { key: TruthKey; score: number }[] = [
+    const base: { key: TruthKey; score: number }[] = [
       { key: '고', score: 0.3 },
       { key: '집', score: 0.2 },
       { key: '멸', score: 0.2 },
+      { key: '도', score: 0.2 },
     ];
-    return kwTruthResult
+    return base
       .filter(x => x.key !== topKW.key)
       .concat([{ key: topKW.key, score: 1.0 }])
       .sort((a, b) => b.score - a.score);
   }
 
-  // No keyword match → 고 default (expressing suffering)
-  // Use ML as secondary signal (can override 고 if very confident about 멸/집/도)
-  const mlRes = await clf(text, TRUTH_ML.map(c => c.label));
-  const ml    = mapResult<TruthKey>(mlRes, TRUTH_ML);
-  const mlTop = ml[0];
-
-  // ML can override 고 only if highly confident (>0.5) about a non-고 intent
-  if (mlTop.key !== '고' && mlTop.score > 0.5) {
-    return ml;
-  }
-
-  // Default to 고 (expressing current suffering)
   return [
     { key: '고', score: 1.0 },
-    ...ml.filter(t => t.key !== '고'),
+    { key: '집', score: 0.2 },
+    { key: '멸', score: 0.2 },
+    { key: '도', score: 0.2 },
   ];
 }
 
@@ -742,16 +619,11 @@ function classifyTopic(text: string): { primary: TopicKey; all: { key: TopicKey;
 
 // ── Main classify function ────────────────────────────────────────────────
 
-export async function classify(question: string): Promise<ClassificationResult> {
-  const clf = await getPipeline();
-
-  const [poisons, truths, sufferings] = await Promise.all([
-    classifyPoisons(question, clf),
-    classifyTruths(question, clf),
-    classifySuffering(question, clf),
-  ]);
-
-  const topic = classifyTopic(question);
+export function classify(question: string): ClassificationResult {
+  const poisons    = classifyPoisons(question);
+  const truths     = classifyTruths(question);
+  const sufferings = classifySuffering(question);
+  const topic      = classifyTopic(question);
 
   // 삼독: 최상위 + 같은 그룹의 경우 모두 포함 (multi-label)
   const primaryPoisons: PoisonKey[] = poisons
