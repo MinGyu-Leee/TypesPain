@@ -251,6 +251,9 @@ function LoadingStage() {
 
 /* ── 재질문 ───────────────────────────────────────────────────────────────── */
 
+// 배고픔·졸림·추위·더위·갈증·피곤처럼 즉각적인 신체 욕구를 표현한 입력 감지
+const PRIMARY_NEED_RE = /배고파|배\s*가?\s*고파|졸려|추워|더워|목이?\s*말라|갈증|피곤해/;
+
 function ClarificationStage({
   originalQuestion,
   error,
@@ -263,14 +266,22 @@ function ClarificationStage({
   onReset: () => void;
 }) {
   const [text, setText] = useState('');
+  const isPrimaryNeed = PRIMARY_NEED_RE.test(originalQuestion);
+
+  const clarPrompt = isPrimaryNeed
+    ? '그 욕구를 채우지 못하게 막는 게 뭔가요?'
+    : '어떤 상황인지 조금 더 이야기해 주실 수 있나요?';
+
+  const clarHint = isPrimaryNeed
+    ? '예: 돈이 없어서, 몸이 아파서, 집이 없어서, 일이 너무 힘들어서 등'
+    : '예: 누군가와의 관계, 건강, 일, 경제적 어려움, 원하는 것을 갖지 못함, 상실 중 어떤 부분이 가장 와닿나요?';
+
   return (
     <div className="clarif-wrap">
       <div className="clarif-card">
         <p className="clarif-echo">"{originalQuestion}"</p>
-        <p className="clarif-prompt">어떤 상황인지 조금 더 이야기해 주실 수 있나요?</p>
-        <p className="clarif-hint">
-          예: 누군가와의 관계, 건강, 일, 상실 중 어떤 부분이 가장 와닿나요?
-        </p>
+        <p className="clarif-prompt">{clarPrompt}</p>
+        <p className="clarif-hint">{clarHint}</p>
         <textarea
           className="ask-textarea"
           value={text}
