@@ -15,11 +15,13 @@
 
 ## 개발 원칙 (변경 금지)
 
-1. **외부 AI API 없음** — Claude, OpenAI 등 일절 사용 안 함. 분류는 순수 키워드+패턴.
-2. **ML 미사용 (Vercel 배포 제약)** — multilingual-e5-small 등 임베딩 모델은 번들 50MB 초과·cold start 10초 초과로 Vercel 서버리스에 배포 불가. 키워드+패턴의 일관성이 앱 정체성이자 경쟁 우위이므로 ML 전환 금지.
-3. **종교 언어 없음** — 붓다, 세존, 경전명(법구경 등), 팔리어는 UI와 단락에서 사용 금지.
-4. **심리학 톤 유지** — 모든 단락(intros.json)은 임상/심리학 언어로. 불교 교리 해설 금지.
-5. **접근성 우선** — 로그인 없음, 무료, 즉시 응답 유지.
+1. **로컬 ML 모델 금지 (Vercel 배포 제약)** — multilingual-e5-small 등 임베딩 모델은 번들 50MB 초과·cold start 10초 초과로 Vercel 서버리스에 배포 불가. 키워드+패턴의 일관성이 앱 정체성이자 경쟁 우위이므로 로컬 ML 전환 금지.
+
+   > ⚠️ **정책 구분**: '로컬 ML 모델 금지'와 '외부 LLM API 호출'은 서로 다른 정책이다. 전자는 Vercel Hobby 플랜의 번들 50MB / 콜드스타트 10초 제약 때문에 금지된 것이다. 후자(Anthropic Claude API, OpenAI API 등 외부 호스팅 LLM을 HTTP로 호출하는 것)는 이 제약과 무관하며 원칙적으로 금지 대상이 아니다. 다만 실제 도입 여부는 매 작업마다 별도로 사람의 승인을 받을 것 — 이 문구는 '금지하지 않는다'는 뜻일 뿐 '자동 승인'을 의미하지 않는다.
+
+2. **종교 언어 없음** — 붓다, 세존, 경전명(법구경 등), 팔리어는 UI와 단락에서 사용 금지.
+3. **심리학 톤 유지** — 모든 단락(intros.json)은 임상/심리학 언어로. 불교 교리 해설 금지.
+4. **접근성 우선** — 로그인 없음, 무료, 즉시 응답 유지.
 
 ---
 
@@ -34,6 +36,9 @@ npm run build        # seed + next build
 # 분류 정확도 테스트 (서버 불필요)
 PATH="/Users/imingyu/.nvm/versions/node/v24.16.0/bin:$PATH" npx tsx scripts/test10classify.ts
 PATH="/Users/imingyu/.nvm/versions/node/v24.16.0/bin:$PATH" npx tsx scripts/test100compound.ts
+
+# 피드백 패턴 후보 추출 (data/feedback.json 필요)
+PATH="/Users/imingyu/.nvm/versions/node/v24.16.0/bin:$PATH" npx tsx scripts/extractCandidates.ts
 ```
 
 ---
@@ -52,12 +57,14 @@ buddhist-qa/
 ├── lib/
 │   ├── types.ts           ← SufferingKey, TruthKey, PoisonKey 등 공유 타입
 │   ├── classify.ts        ← 팔고(8)×삼독(3)×사성제(4) 키워드+패턴 분류기
+│   ├── normalize.ts       ← 한국어 조사 제거 정규화 (의존성 0, ~3KB)
 │   ├── contextOpening.ts  ← 질문 상황 감지 → 단락 첫 문장 동적 생성
 │   └── db.ts              ← SQLite 우선, JSON 폴백 (경전 데이터 레이어)
 ├── scripts/
-│   ├── seed.ts            ← DB 구축
-│   ├── test10classify.ts  ← 팔고 분류 10개 케이스 검증
-│   └── test100compound.ts ← 팔고+맥락반영 100개 케이스 배치 테스트
+│   ├── seed.ts               ← DB 구축
+│   ├── test10classify.ts     ← 팔고 분류 10개 케이스 검증
+│   ├── test100compound.ts    ← 팔고+맥락반영 100개 케이스 배치 테스트
+│   └── extractCandidates.ts  ← 피드백 데이터 → 패턴 후보 추출 (검토 전용)
 ├── app/
 │   ├── api/ask/route.ts      ← POST /api/ask
 │   ├── api/feedback/route.ts ← POST /api/feedback (Vercel KV / 로컬 파일 fallback)
@@ -79,10 +86,11 @@ buddhist-qa/
   → POST /api/ask
   → classify(question)               ← lib/classify.ts
       → 팔고(8) 키워드+패턴 스코어링  ← SUFFERING_KW + SUFFERING_PATTERNS
-          score ≥ 2: 키워드 결과 사용
-          score < 2: ML ZSC fallback  ← Xenova/nli-deberta-v3-small (보조)
-      → 삼독(3) 키워드 + ML 보조
-      → 사성제(4) 키워드 + ML 보조
+          score ≥ 1: 결과 사용
+          score < 1: needsClarification → 재질문 UX → 재분류
+                     재질문 후도 score < 1: 오온성고 확정 제시
+      → 삼독(3) 키워드 (없으면 치 기본값)
+      → 사성제(4) 키워드 (없으면 고 기본값)
       → { primarySuffering, primaryPoison, primaryTruth }
   → intros.json 조회                 ← key: `{팔고}_{삼독}_{사성제}`
       → { paragraph, closing, header }
@@ -97,9 +105,9 @@ buddhist-qa/
 
 | 축 | 카테고리 수 | 분류 방식 |
 |----|------------|---------|
-| 팔고 (八苦) | 8 | 키워드+패턴 primary, ML ZSC fallback |
-| 삼독 (三毒) | 3 | 키워드 primary, 없으면 치(default) + ML 보조 |
-| 사성제 (四聖諦) | 4 | 키워드 primary, 없으면 고(default) + ML override |
+| 팔고 (八苦) | 8 | 키워드+패턴, score < 1 → 재질문 UX → 오온성고 확정 |
+| 삼독 (三毒) | 3 | 키워드, 없으면 치(default) |
+| 사성제 (四聖諦) | 4 | 키워드, 없으면 고(default) |
 
 ### 팔고 키 (SufferingKey)
 
@@ -207,9 +215,11 @@ planner (기능 설계) → developer (구현) → qa (기능 테스트)
 `docs/roadmap.md` 참조.
 
 우선순위 요약:
-1. **오온성고 fallback 개선** — 분류 실패와 진짜 오온성고 구분
-2. **고통의 지도 MVP** — localStorage 기반 팔고 패턴 기록 + `/history` 페이지
-3. **OG 이미지 공유** — "나는 구부득고입니다" 바이럴 기능
+1. ~~**오온성고 fallback 개선**~~ — 완료: 재질문 UX + 오온성고 확정 제시 구현
+2. ~~**자체 패턴 학습 인프라 1단계**~~ — 완료: normalize.ts(조사 정규화) + scoreKW 통합 + extractCandidates.ts(검토 전용)
+   - 2단계(피드백 카테고리 선택 UI): 완료 — "이 분류가 안 맞나요?" → 8개 카테고리 선택 → correctCategory 저장
+3. **고통의 지도 MVP** — localStorage 기반 팔고 패턴 기록 + `/history` 페이지
+4. **OG 이미지 공유** — "나는 구부득고입니다" 바이럴 기능
 
 ---
 

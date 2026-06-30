@@ -413,7 +413,7 @@ html {
 .feedback-row {
   display: flex;
   justify-content: center;
-  padding: 16px 28px 8px;
+  padding: 16px 28px 16px;
 }
 
 .feedback-btn {
@@ -438,6 +438,78 @@ html {
   opacity: 0.65;
 }
 
+/* ─── Feedback category selector ────────────────────────────────────────────── */
+
+.feedback-selector {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.2s ease both;
+}
+
+.feedback-selector-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.feedback-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feedback-cat-btn {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--border-dim);
+  border-radius: 8px;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.feedback-cat-btn:hover {
+  background: rgba(125, 35, 0, 0.04);
+  border-color: var(--border);
+}
+
+.fcat-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+  min-width: 52px;
+}
+
+.fcat-desc {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.feedback-cancel-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  opacity: 0.6;
+  text-align: center;
+  padding: 2px 0;
+  transition: opacity 0.15s;
+}
+
+.feedback-cancel-btn:hover { opacity: 1; }
+
 /* ─── Reset button ──────────────────────────────────────────────────────────── */
 
 .reset-btn {
@@ -456,6 +528,62 @@ html {
 .reset-btn:hover {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+/* ─── Clarification stage ───────────────────────────────────────────────────── */
+
+.clarif-wrap {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  animation: fadeIn 0.4s ease both;
+}
+
+.clarif-card {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.clarif-echo {
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.6;
+  border-left: 3px solid var(--border);
+  padding-left: 12px;
+}
+
+.clarif-prompt {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.clarif-hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ─── Confirmed default (오온성고 확정) ──────────────────────────────────────── */
+
+.confirmed-desc {
+  margin-top: 8px;
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-style: italic;
 }
 
 /* ─── Animations ────────────────────────────────────────────────────────────── */
@@ -480,6 +608,10 @@ html {
   .card-foot {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .clarif-card {
+    padding: 24px 20px;
   }
 
   .disc-btn {

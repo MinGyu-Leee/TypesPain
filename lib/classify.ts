@@ -5,6 +5,7 @@
 // 사성제: keyword → 도/멸/집 감지, 없으면 고 기본값
 
 import type { TruthKey, PoisonKey, TopicKey, SufferingKey, ClassificationResult } from './types';
+import { normalizeForLookup } from './normalize';
 
 // ── 팔고 — keyword-based ──────────────────────────────────────────────────
 
@@ -18,7 +19,10 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
     ['왜 사는지 모르겠', 3],
     ['카르마는', 2], ['집착하면', 2], ['존재의 의미', 2],
     ['살고 싶지 않', 2], ['인생이 무의미', 2], ['존재 자체가', 2], ['행복한 적이 없', 2],
-    ['살아있는 게 힘들', 1], ['왜 태어났', 1], ['삶', 1],
+    ['태어나지 않', 3],     // 태어나지 않았으면 했어요 ("태어나지 말" 미매칭 보완)
+    ['살아있는 게 힘들', 1], ['살아있는 게', 1], ['왜 태어났', 1], ['삶', 1],
+    ['삶이 너무 힘들', 2],  // Nate pann "삶이 너무 힘들어요" 빈출
+    ['죽으면 편할', 3],     // Nate pann "죽으면 편할거같은데" 빈출
   ]},
   { key: '노고', terms: [
     ['노화', 3], ['늙어가', 3], ['나이가 들수록', 3], ['나이가 드는', 3], ['나이가 들어서', 3],
@@ -27,7 +31,13 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
     ['나이 드', 2],   // '나이 드는', '나이 드니' 등 (공백 없이)
     ['나이가 드', 2], // '나이가 드니까', '나이가 드면서' 등 ('가' 포함 활용형)
     ['갱년기', 3],
+    ['체력', 2],    // '체력이 너무 떨어졌어요' 등 부사 삽입 대응
+    ['기억력', 2],  // 기억력이 나빠졌어요
+    ['주름', 2],    // 주름이 생겼어요
+    ['탈모', 2],    // 탈모가 심해요
     ['노인', 1], ['나이 들', 1],
+    ['폐경', 3],   // "폐경기가 왔어요" — 갱년기와 함께 자주 언급되는 노화 전용 표현
+    ['노안', 2],   // "노안이 왔어요" — 노화 전용
   ]},
   { key: '병고', terms: [
     ['암 진단', 3], ['암이 발견', 3], ['수술을 받', 3], ['입원해야', 3], ['항암', 3],
@@ -37,11 +47,28 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
     ['아파요', 1], ['아파서', 1],
     ['두통', 2], ['편두통', 2], ['불면증', 3],
     ['병원', 1], ['통증', 1], ['몸이 안 좋', 1], ['아프다', 1],
+    ['건강 안 좋', 2], // 조사 정규화 후 "건강도 안 좋고요" 등 포착
+    ['다쳤', 2], ['다쳐', 2], ['다친', 2],  // 다치다 활용형 전체
+    ['수술했', 2],  // "수술했어요" (수술을 받 ≠ 수술했)
+    ['입원했', 3],  // "입원했어요" (입원해야 ≠ 입원했)
+    ['골절', 3], ['부러졌', 2],  // 골절/뼈 부러짐
+    ['열이 나', 2], // 열이 나요
+    ['기침', 1],    // 기침이 심해요
+    ['당뇨', 2],    // "당뇨가 있어요" — 만성질환 (걸렸 패턴 미포착)
+    ['고혈압', 2],  // "고혈압이에요" — 만성질환
+    ['디스크', 2],  // "허리 디스크가 있어요" — 흔한 근골격 질환
+    ['어지러', 2],  // "어지러워요", "어지럽다"
   ]},
   { key: '사고', terms: [
-    ['돌아가셨', 3], ['돌아가신', 3], ['세상을 떠나', 3], ['사망', 3], ['임종', 3], ['별세', 3],
+    ['돌아가셨', 3], ['돌아가신', 3], ['세상을 떠나', 3], ['세상을 떠났', 3], ['사망', 3], ['임종', 3], ['별세', 3],
     ['죽음이 두려', 3], ['죽음이 무서', 3], ['죽을 것 같', 3], ['죽을까봐', 3], ['죽으면', 3],
-    ['죽었', 2], ['빈자리', 2], ['장례', 2], ['잃었어요', 2], ['죽음 때문에', 3], ['사람의 죽음', 3],
+    ['죽었', 2], ['죽어서', 2], ['죽어버렸', 2], ['빈자리', 2], ['장례', 2], ['잃었어요', 2], ['죽음 때문에', 3], ['사람의 죽음', 3],
+    ['죽음이', 2],  // "죽음이 너무 무서워요" 등 부사 삽입 대응 (죽음이 두려/무서 미매칭 보완)
+    ['죽는', 2],    // "죽는다는 생각이 두려워요"
+    ['하늘나라', 3],   // "하늘나라로 가셨어요" — 한국어 완곡 표현
+    ['먼저 가셨', 3],  // "먼저 가셨어요" — 한국어 완곡 표현
+    ['부고', 3],       // "부고를 받았어요" — 명확한 사별 표현
+    ['무지개다리', 3], // "무지개다리를 건넜어요" — 반려동물 사별 완곡 표현
   ]},
   { key: '애별리고', terms: [
     ['헤어졌', 3], ['헤어진', 3], ['이별했', 3], ['이별이', 3],
@@ -52,21 +79,29 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
     ['말할 사람', 3], ['얘기할 사람', 2], ['들어줄 사람', 2], // 소통 상대 없음
     ['이별', 1], ['남자친구', 1], ['여자친구', 1], ['전남친', 1], ['전여친', 1], ['짝사랑', 1],
     ['반려동물', 1],
+    ['이별 통보', 3],  // Nate pann 이별 글에서 "이별통보" 매우 빈번
+    ['연락이 끊', 2],  // "연락이 끊겼어요" — 연락이 없과 다른 형태
+    ['혼자가 됐', 2],  // "혼자가 됐어요" — 이별/상실 후
   ]},
   { key: '원증회고', terms: [
     ['바람을 피웠', 3], ['바람피웠', 3], ['바람피운', 3], ['불륜', 3], ['외도', 3], ['배신당', 3],
     ['배신', 2], ['믿었는데', 2], ['뒤통수', 2], ['원수', 2],
     ['원망스러', 2], ['다퉤', 2], ['다퉈', 2], ['상처받았', 2], ['적인지 모르', 2],
     ['밉기도', 2], ['싫어하는 것 같', 2],
-    ['살기 싫어', 2], ['같이 있기 싫', 2], ['못 견디겠', 2], ['견딜 수 없', 2], ['피하고 싶어', 2],
+    ['살기 싫어', 2], ['살기가 싫어', 2], ['같이 있기 싫', 2], ['못 견디겠', 2], ['견딜 수 없', 2], ['피하고 싶어', 2],
     ['갑갑해', 2], ['숨막혀', 2], ['왕따', 2], ['억울하게', 2], ['뒤에서 욕', 2],
     ['싫은 사람', 1], ['미운 사람', 1], ['마주쳐', 2],
     ['마음에 안 들', 2], ['분위기가 안 좋', 2], ['분위기가 너무 안', 2],
+    ['가족 안 맞', 2], // 조사 정규화 후 "가족이랑 안 맞고" 등 포착
+    ['싸웠', 2],    // "친구랑 싸웠어요" — 싸워(기존) ≠ 싸웠(과거형 다른 음절)
+    ['따돌림', 3],    // "따돌림을 당하고 있어요"
+    ['괴롭히는', 2],  // "괴롭히는 사람이 있어요"
+    ['무시당', 2],    // "무시당하는 것 같아요"
   ]},
   { key: '구부득고', terms: [
     ['공부가 하기 싫', 3], ['일이 하기 싫', 3], ['시험에 떨어', 3], ['취업이 안', 3], ['합격이 안', 3],
     ['계속 떨어', 2], ['불합격', 2], ['안 받아줘', 2], ['합격을 못', 2],
-    ['하기 싫어', 2], ['하기 싫다', 2], ['뜻대로 안', 2], ['노력해도 안', 2], ['원하는 게 안', 2],
+    ['경제적', 2], ['뜻대로 안', 2], ['노력해도 안', 2], ['원하는 게 안', 2],
     ['실직', 3], ['백수가', 2], ['백수로', 2], ['이루지 못', 2], ['허탈해', 2], ['실패했', 2], ['사업 실패', 2],
     ['집이 없', 3], ['집을 구하', 3], ['전세금', 3], ['월세', 2], ['보증금', 2], ['주거', 2],
     ['생계', 3], ['생활비', 2], ['먹고살', 2], ['먹고 살', 2], ['빚', 2],
@@ -75,12 +110,20 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
     ['대출', 2], ['월급', 2], ['연봉', 2], ['급여', 2], // 수입/대출 관련
     ['생활이 빠듯', 3], ['생활이 너무 빠듯', 3],         // 빠듯한 생활
     ['공부가', 1], ['시험', 1], ['취업', 1], ['성적', 1],
+    ['대학 떨어', 3],  // Nate pann "대학 다 떨어짐" — 수험생 빈출 표현
+    ['재수를 해', 2],  // "재수를 해야 해요" — 학업 좌절 수험생 표현
+    ['승진', 2],       // "승진이 안 됐어요" — 직장인 좌절 표현
   ]},
   { key: '오온성고', terms: [
     ['내가 싫', 3], ['나 자신이 싫', 3], ['나를 혐오', 3], ['자기혐오', 3], ['자존감이 없', 3],
     ['나 자신이', 2], // '나 자신이 너무 싫어요' 처럼 수식어가 끼어도 포착
-    ['의욕이 없', 2], ['무기력', 2], ['아무것도 하기 싫', 2], ['나는 왜 이', 2],
+    ['의욕이 없', 2], ['무기력', 2], ['아무것도 하기 싫', 3], ['나는 왜 이', 2],
     ['자신감이 없', 1], ['공허', 1], ['우울', 1],
+    ['하고 싶지 않', 2],  // "아무것도 하고 싶지 않아요" ("하기 싫" 표현과 다른 형태)
+    ['자존감이 낮', 3],    // "자존감이 낮아요" — 자존감이 없과 다른 형태
+    ['자책감', 2],         // "자책감이 심해요"
+    ['죄책감', 1],         // "죄책감이 너무 커요" (충돌 위험으로 낮은 weight)
+    ['자존감이 바닥', 3],  // "자존감이 바닥이에요"
   ]},
 ];
 
@@ -90,10 +133,11 @@ const SUFFERING_KW: KWEntry<SufferingKey>[] = [
 type PatternEntry = { key: SufferingKey; re: RegExp; score: number };
 
 const SUFFERING_PATTERNS: PatternEntry[] = [
-  // ─ 애별리고: [장소이탈/타지] + [외로움/그리움] ─
+  // ─ 애별리고: [장소이탈/타지] + [외로움·고통·힘듦] ─
+  // "어렵" ≠ "어려워요" (ㅂ불규칙) — 활용형 어려워|어려운 별도 포함
   {
     key: '애별리고',
-    re: /(외국|타지|이민|유학|타국|낯선\s*곳|혼자\s*살)[\s\S]{0,40}(외로워|외롭|그리워|보고\s*싶|쓸쓸)/,
+    re: /(해외|외국|타지|이민|유학|타국|낯선\s*곳|혼자\s*살)[\s\S]{0,40}(외로워|외롭|그리워|보고\s*싶|쓸쓸|힘들|지쳐|어렵|어려워|어려운|고생|고독)/,
     score: 3,
   },
   // ─ 애별리고: [관계] + [멀어짐/사라짐] ─
@@ -156,6 +200,20 @@ const SUFFERING_PATTERNS: PatternEntry[] = [
     re: /(왕따|학교\s*폭력|괴롭힘)[\s\S]{0,20}(무서워|힘들어|가기|두려)/,
     score: 3,
   },
+  // ─ 생고: "살아있는 게 너무 힘들어요" 등 부사 삽입 형태 ─
+  {
+    key: '생고',
+    re: /살아있는\s*(것이|게|것)[\s\S]{0,12}힘들/,
+    score: 2,
+  },
+
+  // ─ 병고: 감기·독감 등 질병에 걸림 ─
+  {
+    key: '병고',
+    re: /(감기|독감|폐렴|간염|위염|당뇨|고혈압|천식|위장염)[\s\S]{0,5}(걸렸|걸려|앓고|앓아)/,
+    score: 3,
+  },
+
   // ─ 병고: 몸이 안 좋아진 상황 ─
   {
     key: '병고',
@@ -375,6 +433,12 @@ const SUFFERING_PATTERNS: PatternEntry[] = [
     re: /(사랑하는\s*사람|소중한\s*사람|가족)[\s\S]{0,5}(죽음|돌아가|세상을\s*떠)/,
     score: 4,
   },
+  // ─ 사고: 반려동물 죽음 ─
+  {
+    key: '사고',
+    re: /(강아지|고양이|반려견|반려묘|반려동물|애완동물|우리\s*개|우리\s*고양이)[\s\S]{0,15}(죽|잃었|세상을\s*떠|하늘로|떠났|떠나버)/,
+    score: 3,
+  },
 
   // ─ 구부득고: 수입/급여 부족 ─
   {
@@ -441,6 +505,34 @@ const SUFFERING_PATTERNS: PatternEntry[] = [
     re: /나\s*자신이[\s\S]{0,10}(싫어|싫다|싫은|미워|혐오)/,
     score: 3,
   },
+
+  // ─ 원증회고: [직장·회사·학교] 다니기·생활이 힘들어 ─
+  {
+    key: '원증회고',
+    re: /(직장|회사|학교)[\s\S]{0,5}(다니기|가기|출근|생활)[\s\S]{0,20}(힘들|어렵|어려워|지쳐)/,
+    score: 3,
+  },
+  // ─ 원증회고: [가족·배우자]가 힘들게·괴롭게 해 ─
+  {
+    key: '원증회고',
+    re: /(아버지|어머니|아빠|엄마|부모님|형|언니|오빠|가족|남편|아내)[\s\S]{0,10}(힘들게|괴롭게)[\s\S]{0,5}(해|했|하고)/,
+    score: 3,
+  },
+  // ─ 병고: 몸 상태·건강 상태가 좋지 않음 ─
+  {
+    key: '병고',
+    re: /(몸\s*상태|건강\s*상태)[\s\S]{0,10}(좋지\s*않|안\s*좋|나빠|나쁘)/,
+    score: 3,
+  },
+
+  // ─ 구부득고: 대학 입시 실패 (어절 사이 조사 삽입 대응) ─
+  { key: '구부득고', re: /대학[\s\S]{0,10}(떨어|불합격)/, score: 3 },
+
+  // ─ 오온성고: 이유 없는 힘듦·우울 ─
+  { key: '오온성고', re: /이유\s*(없이|도\s*없이)[\s\S]{0,15}(힘들|우울|슬퍼|무기력)/, score: 3 },
+
+  // ─ 원증회고: 직장·학교 내 괴롭힘·따돌림 ─
+  { key: '원증회고', re: /(직장|회사|학교)[\s\S]{0,10}(괴롭힘|따돌림|무시)[\s\S]{0,15}(당하|받고|힘들|당해|피해)/, score: 3 },
 ];
 
 function scorePatterns(text: string): Map<SufferingKey, number> {
@@ -511,12 +603,17 @@ const TRUTH_KW: KWEntry<TruthKey>[] = [
 ];
 
 // ── Generic keyword scorer ───────────────────────────────────────────────
+// 원문과 조사 제거 정규화 텍스트를 모두 체크해 표면형 변이("건강도"→"건강")를 포착.
 
 function scoreKW<K>(text: string, entries: KWEntry<K>[]): { key: K; score: number }[] {
+  const normalized = normalizeForLookup(text);
   return entries
     .map(({ key, terms }) => ({
       key,
-      score: terms.reduce((n, [w, weight]) => n + (text.includes(w) ? weight : 0), 0),
+      score: terms.reduce(
+        (n, [w, weight]) => n + ((text.includes(w) || normalized.includes(w)) ? weight : 0),
+        0,
+      ),
     }))
     .sort((a, b) => b.score - a.score);
 }
@@ -639,5 +736,72 @@ export function classify(question: string): ClassificationResult {
     poisons,
     primaryTruth:     truths[0].key,
     truths,
+  };
+}
+
+// ── 분류 근거 추적 (API 요청 로그용) ─────────────────────────────────────────
+
+export interface ClassifyTrace {
+  sufferingKW:        { key: SufferingKey; term: string; weight: number }[];
+  sufferingPatterns:  { key: SufferingKey; score: number }[];
+  sufferingWinner:    SufferingKey;
+  sufferingScore:     number;
+  isDefaultSuffering: boolean;
+  poisonWinner:       PoisonKey;
+  isDefaultPoison:    boolean;
+  truthWinner:        TruthKey;
+  isDefaultTruth:     boolean;
+}
+
+export function traceClassify(text: string): ClassifyTrace {
+  const normalized = normalizeForLookup(text);
+
+  // 팔고: 어떤 키워드가 매칭됐는지 (원문 + 조사 정규화 모두 확인)
+  const sufferingKW: ClassifyTrace['sufferingKW'] = [];
+  for (const { key, terms } of SUFFERING_KW) {
+    for (const [term, weight] of terms) {
+      if (text.includes(term) || normalized.includes(term)) sufferingKW.push({ key, term, weight });
+    }
+  }
+
+  // 팔고: 어떤 패턴이 매칭됐는지
+  const sufferingPatterns: ClassifyTrace['sufferingPatterns'] = [];
+  for (const { key, re, score } of SUFFERING_PATTERNS) {
+    if (re.test(text)) sufferingPatterns.push({ key, score });
+  }
+
+  // 합산 (classifySuffering과 동일 로직)
+  const combined = new Map<SufferingKey, number>(SUFFERING_KW.map(({ key }) => [key, 0]));
+  for (const { key, weight } of sufferingKW) combined.set(key, (combined.get(key) ?? 0) + weight);
+  for (const { key, score } of sufferingPatterns) combined.set(key, (combined.get(key) ?? 0) + score);
+  const ranked = (Array.from(combined.entries()) as [SufferingKey, number][])
+    .map(([key, score]) => ({ key, score }))
+    .sort((a, b) => b.score - a.score);
+  const top = ranked[0] ?? { key: '오온성고' as SufferingKey, score: 0 };
+  const isDefaultSuffering = top.score < 1;
+
+  // 삼독
+  const poisonKWScores = scoreKW(text, POISON_KW);
+  const tamRaw = poisonKWScores.find(k => k.key === '탐')?.score ?? 0;
+  const jinRaw = poisonKWScores.find(k => k.key === '진')?.score ?? 0;
+  const isDefaultPoison = tamRaw === 0 && jinRaw === 0;
+  const poisonWinner: PoisonKey = isDefaultPoison ? '치' : (tamRaw >= jinRaw ? '탐' : '진');
+
+  // 사성제
+  const truthKWScores = scoreKW(text, TRUTH_KW);
+  const topTruth = truthKWScores[0];
+  const isDefaultTruth = topTruth.score === 0;
+  const truthWinner: TruthKey = isDefaultTruth ? '고' : topTruth.key;
+
+  return {
+    sufferingKW,
+    sufferingPatterns,
+    sufferingWinner:    isDefaultSuffering ? '오온성고' : top.key,
+    sufferingScore:     top.score,
+    isDefaultSuffering,
+    poisonWinner,
+    isDefaultPoison,
+    truthWinner,
+    isDefaultTruth,
   };
 }

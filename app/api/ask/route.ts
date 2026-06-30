@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-import { classify } from '@/lib/classify';
+import { classify, traceClassify } from '@/lib/classify';
 import { querySuttas } from '@/lib/db';
 import type { QueryResult, StageIntros } from '@/lib/types';
 import { buildContextualParagraph } from '@/lib/contextOpening';
@@ -40,7 +40,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: '잘못된 요청입니다.' }, { status: 400 });
   }
 
-  const classification = await classify(question);
+  const trace  = traceClassify(question);
+  const kwStr  = trace.sufferingKW.map(h => `"${h.term}"→${h.key}(+${h.weight})`).join(', ');
+  const patStr = trace.sufferingPatterns.map(p => `${p.key}(+${p.score})`).join(', ');
+  const sufLog = trace.isDefaultSuffering
+    ? '오온성고 ← 기본값(매칭 없음)'
+    : `${trace.sufferingWinner}(${trace.sufferingScore}pt)` +
+      (kwStr  ? ` | KW: ${kwStr}`   : '') +
+      (patStr ? ` | PAT: ${patStr}` : '');
+  console.log(
+    `[ask] "${question}"\n` +
+    `  팔고: ${sufLog}\n` +
+    `  삼독: ${trace.poisonWinner}${trace.isDefaultPoison ? ' ← 기본값' : ''}\n` +
+    `  사성제: ${trace.truthWinner}${trace.isDefaultTruth ? ' ← 기본값' : ''}`,
+  );
+
+  const classification = classify(question);
   const suttas = querySuttas(classification.primaryTruth, classification.primaryPoisons[0], classification.primarySuffering);
 
   const d = getIntros();
@@ -79,6 +94,6 @@ export async function POST(req: NextRequest) {
     },
   };
 
-  const result: QueryResult = { classification, suttas, stages };
+  const result: QueryResult = { classification, suttas, stages, needsClarification: trace.isDefaultSuffering };
   return NextResponse.json(result);
 }

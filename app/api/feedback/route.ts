@@ -8,6 +8,7 @@ interface FeedbackEntry {
   timestamp: string;
   question: string;
   primarySuffering: string;
+  correctCategory?: string;
   primaryPoison: string;
   primaryTruth: string;
 }
@@ -18,19 +19,22 @@ const useKV = !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
 export async function POST(req: NextRequest) {
   let question: string;
   let classification: Record<string, unknown>;
+  let correctCategory: string | undefined;
   try {
     const body = await req.json();
     question = String(body.question ?? '').trim().slice(0, 500);
     classification = body.classification ?? {};
+    correctCategory = body.correctCategory ? String(body.correctCategory) : undefined;
     if (!question) return NextResponse.json({ error: '질문이 없습니다.' }, { status: 400 });
   } catch {
     return NextResponse.json({ error: '잘못된 요청' }, { status: 400 });
   }
 
   const entry: FeedbackEntry = {
-    timestamp: new Date().toISOString(),
+    timestamp:        new Date().toISOString(),
     question,
     primarySuffering: String(classification.primarySuffering ?? ''),
+    ...(correctCategory ? { correctCategory } : {}),
     primaryPoison:    String((classification.primaryPoisons as string[])?.[0] ?? ''),
     primaryTruth:     String(classification.primaryTruth ?? ''),
   };

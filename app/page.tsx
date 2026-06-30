@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import type { QueryResult, SufferingKey } from '@/lib/types';
 
-type AppStage = 'question' | 'loading' | 'result';
+type AppStage = 'question' | 'loading' | 'needs-clarification' | 'result';
 
 const SUFFERING_INFO: Record<string, { hanja: string; desc: string }> = {
   생고:    { hanja: '生苦',    desc: '존재 자체의 무게' },
@@ -113,24 +113,19 @@ function SufferingDonut({ active }: { active: SufferingKey }) {
 /* ── App root ────────────────────────────────────────────────────────────── */
 
 export default function Home() {
-  const [question, setQuestion] = useState('');
-  const [stage, setStage]       = useState<AppStage>('question');
-  const [result, setResult]     = useState<QueryResult | null>(null);
-  const [error, setError]       = useState('');
+  const [question, setQuestion]               = useState('');
+  const [stage, setStage]                     = useState<AppStage>('question');
+  const [result, setResult]                   = useState<QueryResult | null>(null);
+  const [isConfirmedDefault, setIsConfirmedDefault] = useState(false);
+  const [error, setError]                     = useState('');
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!question.trim() || stage !== 'question') return;
-    setError('');
-    setResult(null);
-    setStage('loading');
-
+  async function callAPI(text: string, isClarification: boolean) {
     const t0 = Date.now();
     try {
       const res  = await fetch('/api/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: question.trim() }),
+        body: JSON.stringify({ question: text }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? '서버 오류');
@@ -138,13 +133,36 @@ export default function Home() {
       const wait = Math.max(0, 1500 - (Date.now() - t0));
       await new Promise(r => setTimeout(r, wait));
 
-      setResult(data as QueryResult);
-      setStage('result');
+      const queryResult = data as QueryResult;
+      if (!isClarification && queryResult.needsClarification) {
+        setStage('needs-clarification');
+      } else {
+        setResult(queryResult);
+        setIsConfirmedDefault(isClarification && !!queryResult.needsClarification);
+        setStage('result');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : '알 수 없는 오류');
-      setStage('question');
+      setStage(isClarification ? 'needs-clarification' : 'question');
     }
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!question.trim() || stage !== 'question') return;
+    setError('');
+    setResult(null);
+    setIsConfirmedDefault(false);
+    setStage('loading');
+    await callAPI(question.trim(), false);
+  }
+
+  async function handleClarification(clarText: string) {
+    setError('');
+    setStage('loading');
+    // 원문 + 보충 텍스트를 합쳐 키워드 매칭 신호 극대화
+    await callAPI(`${question.trim()} ${clarText}`, true);
   }
 
   function reset() {
@@ -152,6 +170,7 @@ export default function Home() {
     setResult(null);
     setError('');
     setQuestion('');
+    setIsConfirmedDefault(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -172,8 +191,22 @@ export default function Home() {
 
       {stage === 'loading' && <LoadingStage />}
 
+      {stage === 'needs-clarification' && (
+        <ClarificationStage
+          originalQuestion={question}
+          error={error}
+          onSubmit={handleClarification}
+          onReset={reset}
+        />
+      )}
+
       {stage === 'result' && result && (
-        <ResultPage result={result} question={question} onReset={reset} />
+        <ResultPage
+          result={result}
+          question={question}
+          isConfirmedDefault={isConfirmedDefault}
+          onReset={reset}
+        />
       )}
     </main>
   );
@@ -216,19 +249,78 @@ function LoadingStage() {
   );
 }
 
+/* ── 재질문 ───────────────────────────────────────────────────────────────── */
+
+function ClarificationStage({
+  originalQuestion,
+  error,
+  onSubmit,
+  onReset,
+}: {
+  originalQuestion: string;
+  error: string;
+  onSubmit: (text: string) => void;
+  onReset: () => void;
+}) {
+  const [text, setText] = useState('');
+  return (
+    <div className="clarif-wrap">
+      <div className="clarif-card">
+        <p className="clarif-echo">"{originalQuestion}"</p>
+        <p className="clarif-prompt">어떤 상황인지 조금 더 이야기해 주실 수 있나요?</p>
+        <p className="clarif-hint">
+          예: 누군가와의 관계, 건강, 일, 상실 중 어떤 부분이 가장 와닿나요?
+        </p>
+        <textarea
+          className="ask-textarea"
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder="조금 더 말해주세요..."
+          autoFocus
+          onKeyDown={e => {
+            if (e.key === 'Enter' && (e.metaKey || e.ctrlKey) && text.trim())
+              onSubmit(text.trim());
+          }}
+        />
+        {error && <p className="error-msg">{error}</p>}
+        <button
+          className="submit-btn"
+          type="button"
+          onClick={() => text.trim() && onSubmit(text.trim())}
+          disabled={!text.trim()}
+        >
+          계속하기
+        </button>
+      </div>
+      <button type="button" className="reset-btn" onClick={onReset}>
+        ← 처음으로
+      </button>
+    </div>
+  );
+}
+
 /* ── 결과 ─────────────────────────────────────────────────────────────────── */
 
-function ResultPage({ result, question, onReset }: { result: QueryResult; question: string; onReset: () => void }) {
-  const [feedbackState, setFeedbackState] = useState<'idle' | 'sending' | 'done'>('idle');
+function ResultPage({
+  result,
+  question,
+  isConfirmedDefault,
+  onReset,
+}: {
+  result: QueryResult;
+  question: string;
+  isConfirmedDefault: boolean;
+  onReset: () => void;
+}) {
+  const [feedbackState, setFeedbackState] = useState<'idle' | 'selecting' | 'sending' | 'done'>('idle');
 
-  async function handleFeedback() {
-    if (feedbackState !== 'idle') return;
+  async function handleCategorySelect(correctCategory: string) {
     setFeedbackState('sending');
     try {
       await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, classification: result.classification }),
+        body: JSON.stringify({ question, classification: result.classification, correctCategory }),
       });
     } finally {
       setFeedbackState('done');
@@ -245,7 +337,16 @@ function ResultPage({ result, question, onReset }: { result: QueryResult; questi
 
         {/* 헤더 */}
         <div className="card-top">
-          <p className="card-super">당신의 고통은 오래된 이름이 있어요</p>
+          {isConfirmedDefault ? (
+            <>
+              <p className="card-super">이 고통의 이름은 오온성고(五蘊盛苦)입니다</p>
+              <p className="confirmed-desc">
+                이유도 모른 채 무겁고 공허한 느낌 — 그것 자체가 인식될 때 비로소 이름이 생깁니다.
+              </p>
+            </>
+          ) : (
+            <p className="card-super">당신의 고통은 오래된 이름이 있어요</p>
+          )}
         </div>
 
         {/* 접기 1: 어떤 괴로움인지 */}
@@ -277,14 +378,38 @@ function ResultPage({ result, question, onReset }: { result: QueryResult; questi
         <div className="feedback-row">
           {feedbackState === 'done' ? (
             <span className="feedback-thanks">피드백 감사해요.</span>
+          ) : feedbackState === 'selecting' ? (
+            <div className="feedback-selector">
+              <p className="feedback-selector-label">어떤 고통에 더 가깝나요?</p>
+              <div className="feedback-cats">
+                {SUFFERING_ORDER.map(key => (
+                  <button
+                    key={key}
+                    type="button"
+                    className="feedback-cat-btn"
+                    onClick={() => handleCategorySelect(key)}
+                  >
+                    <span className="fcat-name">{key}</span>
+                    <span className="fcat-desc">{SUFFERING_INFO[key].desc}</span>
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                className="feedback-cancel-btn"
+                onClick={() => setFeedbackState('idle')}
+              >
+                취소
+              </button>
+            </div>
           ) : (
             <button
               type="button"
               className="feedback-btn"
-              onClick={handleFeedback}
+              onClick={() => setFeedbackState('selecting')}
               disabled={feedbackState === 'sending'}
             >
-              {feedbackState === 'sending' ? '전송 중...' : '이 분류가 안 맞나요?'}
+              이 분류가 안 맞나요?
             </button>
           )}
         </div>

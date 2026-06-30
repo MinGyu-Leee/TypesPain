@@ -76,4 +76,5 @@ export interface QueryResult {
   classification: ClassificationResult;
   suttas: Sutta[];
   stages: StageIntros;
+  needsClarification?: boolean;
 }
