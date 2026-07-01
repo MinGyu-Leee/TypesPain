@@ -183,7 +183,7 @@ export default function Home() {
           <circle cx="31" cy="3" r="3" fill="currentColor"/>
         </svg>
         <h1>마음결</h1>
-        <p className="subtitle">감정에 이름을 붙이는 시간</p>
+        <p className="subtitle">당신이 힘든 이유에는 이름이 있어요</p>
       </header>
 
       {stage === 'question' && (
@@ -228,7 +228,7 @@ function QuestionStage({ question, setQuestion, error, onSubmit }: {
         className="ask-textarea"
         value={question}
         onChange={e => setQuestion(e.target.value)}
-        placeholder="지금 마음이 어떠세요?"
+        placeholder="지금 어떤 게 힘드세요?"
         onKeyDown={e => {
           if (e.key === 'Enter' && (e.metaKey || e.ctrlKey))
             onSubmit(e as unknown as React.FormEvent);
