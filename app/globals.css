@@ -1,15 +1,15 @@
 /* ─── Variables ────────────────────────────────────────────────────────────── */
 
 :root {
-  --bg:         #fdf8f0;
-  --surface:    #fff9f1;
-  --border:     #e8d9c0;
-  --border-dim: #f0e4cc;
-  --text:       #2c1a0e;
-  --muted:      #8c6a46;
-  --accent:     #7d2300;
-  --gold:       #9a7030;
-  --gold-light: #c4943c;
+  --bg:         #fdf8f2;
+  --surface:    #ffffff;
+  --border:     #e4dbd0;
+  --border-dim: #ede7de;
+  --text:       #282220;
+  --muted:      #7a6a62;
+  --accent:     #b05540;
+  --sub:        #5a8a6a;
+  --sub-light:  #a0c8b0;
 }
 
 /* ─── Reset ────────────────────────────────────────────────────────────────── */
@@ -48,9 +48,8 @@ html {
 
 .wheel {
   display: block;
-  font-size: 2rem;
-  color: var(--gold);
-  margin-bottom: 8px;
+  color: var(--sub);
+  margin-bottom: 10px;
 }
 
 .site-header h1 {
@@ -94,12 +93,11 @@ html {
 }
 
 .ask-textarea:focus {
-  border-color: var(--gold);
+  border-color: var(--sub);
 }
 
 .ask-textarea::placeholder {
-  color: #c4a882;
-  font-style: italic;
+  color: #b0a090;
 }
 
 .submit-btn {
@@ -144,8 +142,7 @@ html {
 }
 
 .loading-wheel {
-  font-size: 2.4rem;
-  color: var(--gold);
+  color: var(--sub);
   display: inline-block;
   animation: breathe 2.4s ease-in-out infinite;
 }
@@ -182,8 +179,8 @@ html {
 .result-card {
   width: 100%;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   overflow: hidden;
 }
 
@@ -226,12 +223,12 @@ html {
 
 .disc-btn:hover {
   color: var(--text);
-  background: rgba(154, 112, 48, 0.04);
+  background: rgba(90, 138, 106, 0.06);
 }
 
 .disc-chevron {
   font-size: 1rem;
-  color: var(--gold);
+  color: var(--sub);
   transition: transform 0.25s ease;
   display: inline-block;
   line-height: 1;
@@ -319,9 +316,8 @@ html {
 .insight-label {
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--gold);
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--sub);
 }
 
 .insight-para {
@@ -365,7 +361,7 @@ html {
 }
 
 .sutta-ref:hover {
-  color: var(--gold);
+  color: var(--sub);
   text-decoration: underline;
 }
 
@@ -397,7 +393,7 @@ html {
 
 .foot-link {
   font-size: 0.78rem;
-  color: var(--gold);
+  color: var(--sub);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -476,7 +472,7 @@ html {
 }
 
 .feedback-cat-btn:hover {
-  background: rgba(125, 35, 0, 0.04);
+  background: rgba(176, 85, 64, 0.06);
   border-color: var(--border);
 }
 
@@ -545,8 +541,8 @@ html {
 .clarif-card {
   width: 100%;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   padding: 32px;
   display: flex;
   flex-direction: column;

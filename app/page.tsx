@@ -177,9 +177,11 @@ export default function Home() {
   return (
     <main className="page">
       <header className="site-header">
-        <span className="wheel">☸</span>
-        <h1>고통의 이름</h1>
-        <p className="subtitle">팔고(八苦) 이론으로 마음의 고통을 진단합니다</p>
+        <svg className="wheel" width="36" height="18" viewBox="0 0 36 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1 9 Q5.5 1 10 9 Q14.5 17 19 9 Q23.5 1 28 9 Q32.5 17 35 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
+        </svg>
+        <h1>마음결</h1>
+        <p className="subtitle">감정에 이름을 붙이는 시간</p>
       </header>
 
       {stage === 'question' && (
@@ -243,7 +245,9 @@ function QuestionStage({ question, setQuestion, error, onSubmit }: {
 function LoadingStage() {
   return (
     <div className="loading-stage">
-      <span className="loading-wheel">☸</span>
+      <svg className="loading-wheel" width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 12 Q7 2 13 12 Q19 22 25 12 Q31 2 37 12 Q43 22 47 14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" fill="none"/>
+      </svg>
       <p className="loading-text">당신의 마음을 살피고 있어요...</p>
     </div>
   );
@@ -350,13 +354,13 @@ function ResultPage({
         <div className="card-top">
           {isConfirmedDefault ? (
             <>
-              <p className="card-super">이 고통의 이름은 오온성고(五蘊盛苦)입니다</p>
+              <p className="card-super">이 감정의 이름은 오온성고(五蘊盛苦)입니다</p>
               <p className="confirmed-desc">
                 이유도 모른 채 무겁고 공허한 느낌 — 그것 자체가 인식될 때 비로소 이름이 생깁니다.
               </p>
             </>
           ) : (
-            <p className="card-super">당신의 고통은 오래된 이름이 있어요</p>
+            <p className="card-super">당신의 감정에는 오래된 이름이 있어요</p>
           )}
         </div>
 
