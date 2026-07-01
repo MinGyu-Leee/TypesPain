@@ -48,8 +48,8 @@ html {
 
 .wheel {
   display: block;
-  color: var(--sub);
-  margin-bottom: 10px;
+  color: var(--accent);
+  margin: 0 auto 10px;
 }
 
 .site-header h1 {
@@ -142,7 +142,7 @@ html {
 }
 
 .loading-wheel {
-  color: var(--sub);
+  color: var(--accent);
   display: inline-block;
   animation: breathe 2.4s ease-in-out infinite;
 }

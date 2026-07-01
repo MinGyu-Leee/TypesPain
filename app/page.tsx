@@ -125,7 +125,7 @@ export default function Home() {
       const res  = await fetch('/api/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: text }),
+        body: JSON.stringify({ question: text, isClarification }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? '서버 오류');
@@ -177,8 +177,10 @@ export default function Home() {
   return (
     <main className="page">
       <header className="site-header">
-        <svg className="wheel" width="36" height="18" viewBox="0 0 36 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M1 9 Q5.5 1 10 9 Q14.5 17 19 9 Q23.5 1 28 9 Q32.5 17 35 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none"/>
+        <svg className="wheel" width="34" height="6" viewBox="0 0 34 6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="3"  cy="3" r="3" fill="currentColor"/>
+          <circle cx="17" cy="3" r="3" fill="currentColor"/>
+          <circle cx="31" cy="3" r="3" fill="currentColor"/>
         </svg>
         <h1>마음결</h1>
         <p className="subtitle">감정에 이름을 붙이는 시간</p>
@@ -245,8 +247,10 @@ function QuestionStage({ question, setQuestion, error, onSubmit }: {
 function LoadingStage() {
   return (
     <div className="loading-stage">
-      <svg className="loading-wheel" width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M1 12 Q7 2 13 12 Q19 22 25 12 Q31 2 37 12 Q43 22 47 14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" fill="none"/>
+      <svg className="loading-wheel" width="46" height="10" viewBox="0 0 46 10" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="5"  cy="5" r="5" fill="currentColor"/>
+        <circle cx="23" cy="5" r="5" fill="currentColor"/>
+        <circle cx="41" cy="5" r="5" fill="currentColor"/>
       </svg>
       <p className="loading-text">당신의 마음을 살피고 있어요...</p>
     </div>

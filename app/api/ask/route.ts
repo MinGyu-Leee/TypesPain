@@ -24,15 +24,18 @@ function getIntros(): IntroData {
   return _intros!;
 }
 
-const CRISIS_RE = /죽고\s?싶|자살|사라지고\s?싶|없어지고\s?싶|모든\s?걸?\s*다?\s*놓|다\s*포기|끝내고\s*싶|살기\s*싫|살고\s*싶지\s*않/;
+const CRISIS_RE  = /죽고\s?싶|자살|사라지고\s?싶|없어지고\s?싶|모든\s?걸?\s*다?\s*놓|다\s*포기|끝내고\s*싶|살기\s*싫|살고\s*싶지\s*않/;
+const CONTEXT_RE = /왜냐하면|때문에|해서|했는데|있는데|있어서|이어서|돼서|라서|니까|거든|잖아|아서|어서/;
 const CRISIS_PARAGRAPH = '지금 이 마음이 얼마나 무거운지, 충분히 느껴져요. 더는 버티기 힘들다는 신호일 수 있어요. 지금 느끼는 고통은 진짜이고, 이 무게를 혼자 다 짊어지지 않아도 됩니다.';
 const CRISIS_CLOSING = '지금 이 마음, 혼자 들고 있지 않아도 돼요.';
 
 export async function POST(req: NextRequest) {
   let question: string;
+  let isClarification: boolean;
   try {
     const body = await req.json();
     question = (body.question ?? '').trim();
+    isClarification = !!body.isClarification;
     if (!question) {
       return NextResponse.json({ error: '질문을 입력해 주세요.' }, { status: 400 });
     }
@@ -94,6 +97,11 @@ export async function POST(req: NextRequest) {
     },
   };
 
-  const result: QueryResult = { classification, suttas, stages, needsClarification: trace.isDefaultSuffering };
+  // 단문 + 맥락 없음: 재질문 트리거 (재질문 2차 제출은 제외)
+  const isShort = question.replace(/\s/g, '').length <= 15;
+  const hasContext = CONTEXT_RE.test(question);
+  const needsClarification = trace.isDefaultSuffering || (!isClarification && isShort && !hasContext);
+
+  const result: QueryResult = { classification, suttas, stages, needsClarification };
   return NextResponse.json(result);
 }
